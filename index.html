@@ -9,6 +9,7 @@
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/64d5e357f6.js" crossorigin="anonymous"></script>
 
+    <!--Page style-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /*MULTIPLE*/
@@ -497,6 +498,7 @@
         }
     </style>
 
+    <!--Images style-->
     <style>
         img {
             vertical-align: middle;
@@ -527,7 +529,7 @@
         .next {
             cursor: pointer;
             position: absolute;
-            top: 16.5vw;
+            top: 21vw;
             width: auto;
             padding: 1vw;
             margin-top: -5vw;
@@ -557,7 +559,7 @@
             font-size: 1vw;
             padding: 8px 12px;
             position: absolute;
-            top: 0;
+            top: 9vw;
         }
         /* Container for image text */
         
@@ -592,13 +594,21 @@
         
         .column {
             float: left;
-            width: 10%;
+            width: 9.9%;
             background-color: #0d2131;
+            margin: 0.1% 0.1% 0 0;
+            border-radius: 15px;
         }
         /* Add a transparency effect for thumnbail images */
         
         .demo {
             opacity: 0.6;
+            width: 100%;
+            height: 6vw;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 1vw;
         }
         
         .active,
@@ -837,16 +847,17 @@
 
     <!--Images-->
     <div class="container">
-        <h3>OUR PUMBLING PROJECTS</h3>
-        <p>You can trust our plumbers and the quality and professionalism of our work.</p>
+        <h3 style="text-align: center; font-size: 4vw; margin: 6vw 0 0 0 ; color: #1F4B70;">OUR PUMBLING PROJECTS</h3>
+        <p style="text-align: center; font-size: 2vw; margin: 0 0 1vw 0; color: #1F4B70;">You can trust our plumbers and the quality and professionalism of our work.</p>
+
         <div class="mySlides">
             <div class="numbertext">1 / 17</div>
             <div style="height: 25vw;">
                 <div style="padding: 1.4vw; display: flex; justify-content: space-around;">
-                    <img src="/images/Custom shower bathroom/shower1.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower2.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower3.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower4.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
+                    <img src="/images/custom-shower-bathroom/shower1.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
+                    <img src="/images/custom-shower-bathroom/shower2.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
+                    <img src="/images/custom-shower-bathroom/shower3.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
+                    <img src="/images/custom-shower-bathroom/shower4.jpg" alt="" style="max-width: 20%; max-height: 22vw;">
                 </div>
             </div>
         </div>
@@ -869,11 +880,10 @@
         <div class="mySlides">
             <div class="numbertext">3 / 17</div>
             <div style="height: 25vw;">
-                <div style="padding: 1.4vw; display: flex; justify-content: space-around;">
-                    <img src="/images/Custom shower bathroom/shower1.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower2.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower3.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower4.jpg" alt="" style="height: 22vw;">
+                <div style="padding: 1.4vw; display: flex; justify-content: center;">
+                    <div style="width: 90%; height: 22.3vw; display: flex; justify-content: space-evenly;">
+                        <div style="width: 20%; background-image: url('/images/1-14-water-main-repair/1.jpg'); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -881,11 +891,10 @@
         <div class="mySlides">
             <div class="numbertext">4 / 17</div>
             <div style="height: 25vw;">
-                <div style="padding: 1.4vw; display: flex; justify-content: space-around;">
-                    <img src="/images/Custom shower bathroom/shower1.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower2.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower3.jpg" alt="" style="height: 22vw;">
-                    <img src="/images/Custom shower bathroom/shower4.jpg" alt="" style="height: 22vw;">
+                <div style="padding: 1.4vw; display: flex; justify-content: center;">
+                    <div style="width: 90%; height: 22.3vw; display: flex; justify-content: space-evenly;">
+                        <div style="width: 20%; background-image: url('/images/cast-iron-main-line-crack/1.jpg'); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1054,59 +1063,132 @@
         </div>
 
         <div class="row" style="padding: 0 1vw 1vw 1vw;">
+
+            <!--1/x-->
             <div class="column">
-                <div class="demo cursor" style="width: 100%; height: 6vw; margin: auto; text-align: center;" onclick="currentSlide(1)" title="Custom shower bathroom">
-                    <i class="fas fa-shower"></i>
-                    <p>Custom shower bathroom</p>
+                <div class="demo cursor" onclick="currentSlide(1)" title="Custom shower bathroom">
+                    <i class="fas fa-shower" style="font-size: 3vw; margin: 0.25vw 0 0 0;"></i>
+                    <p style="margin: 0;">Custom shower bathroom</p>
                 </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" title="toilet gasket replace">
+                <div class="demo cursor" onclick="currentSlide(2)" title="Custom shower bathroom">
+                    <i class="fas fa-toilet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Toilet gasket replace</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(3)" title="">
+                <div class="demo cursor" onclick="currentSlide(3)" title="1&quot; 1&#47;4 water main repair">
+                    <i class="fas fa-wrench" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;"> 1&quot; 1&#47;4 water main repair</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(4)" title="">
+                <div class="demo cursor" onclick="currentSlide(4)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(5)" title="">
+                <div class="demo cursor" onclick="currentSlide(5)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(6)" title="">
+                <div class="demo cursor" onclick="currentSlide(6)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_woods.jpg" style="width:100%" onclick="currentSlide(7)" title="">
+                <div class="demo cursor" onclick="currentSlide(7)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(8)" title="">
+                <div class="demo cursor" onclick="currentSlide(8)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(9)" title="">
+                <div class="demo cursor" onclick="currentSlide(9)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(10)" title="">
+                <div class="demo cursor" onclick="currentSlide(10)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(11)" title="">
+                <div class="demo cursor" onclick="currentSlide(11)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(12)" title="">
+                <div class="demo cursor" onclick="currentSlide(12)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_woods.jpg" style="width:100%" onclick="currentSlide(13)" title="">
+                <div class="demo cursor" onclick="currentSlide(13)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(14)" title="">
+                <div class="demo cursor" onclick="currentSlide(14)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(15)" title="">
+                <div class="demo cursor" onclick="currentSlide(15)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(16)" title="">
+                <div class="demo cursor" onclick="currentSlide(16)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
+
             <div class="column">
-                <img class="demo cursor" src="/images/img_5terre.jpg" style="width:100%" onclick="currentSlide(17)" title="" title="test">
+                <div class="demo cursor" onclick="currentSlide(17)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(18)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
             </div>
         </div>
     </div>
@@ -1150,7 +1232,7 @@
     <div style="text-align: center; color: #1F4B70;">
         <div class="container">
             <!--title-->
-            <p style="margin: 0; font-size: 6vw; font-weight: 700; margin-bottom: 8vw;">OUR PROCESS</p>
+            <p style="margin: 6vw 0 0 0; font-size: 6vw; font-weight: 700; margin-bottom: 8vw;">OUR PROCESS</p>
             <!--table-->
             <div style="background-color: white; display: flex; border-radius: 15px; border-style: solid; border-width: 0.7vw;">
                 <!--1-->
@@ -1239,8 +1321,6 @@
             </div>
         </div>
     </div>
-
-
 
 </body>
 
