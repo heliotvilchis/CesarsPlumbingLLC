@@ -14,114 +14,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /*MULTIPLE*/
         
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .container {
-            width: 90%;
-            margin: auto;
-        }
-        /*HEADER*/
-        
-        .header {
-            height: 6.5vw;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .logo {
-            width: 10vw;
-            background-image: url('/images/logo.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        
-        .head-title {
-            width: 65%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .main-title {
-            width: 100%;
-            height: 70%;
-        }
-        
-        .t1 {
-            text-align: center;
-            color: #BD0006;
-            -webkit-text-stroke: 3.5px black;
-            font-weight: 900;
-            font-size: 4vw;
-            margin: 0
-        }
-        
-        .under-main-title {
-            width: 100%;
-            height: 30%;
-        }
-        
-        .t2 {
-            text-align: center;
-            color: black;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 900;
-            font-size: 1.3vw;
-            margin-top: 0.3vw;
-        }
-        
-        .call-btn {
-            width: 25%;
-        }
-        
-        .call-btn a {
-            text-decoration: none;
-        }
-        
-        .call-btn-div {
-            background-color: #FFC70D;
-            border-radius: 15px;
-            width: 85%;
-            height: 5vw;
-            margin: auto;
-            margin-top: 0.8vw;
-            display: flex;
-            color: #1F4B70;
-        }
-        
-        .call-btn-div i {
-            font-size: 3.5vw;
-            margin: 6px;
-            color: #1F4B70;
-            margin-top: 0.7vw;
-            margin-right: 1vw;
-            margin-left: 0.8vw;
-        }
-        
-        .call-btn-div div {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .top-text {
-            width: 100%;
-            margin: 0;
-            height: 40%;
-            font-size: 1.5vw;
-            margin-top: 0.4vw;
-            color: #509CBA;
-        }
-        
-        .bottom-text {
-            font-size: 2vw;
-            font-weight: 700;
-            margin-top: -1vw;
-        }
-        
-        @media (max-width: 1024px) {
+        @media (min-width: 1024px) {
             body {
                 margin: 0;
                 font-family: 'Roboto', sans-serif;
@@ -131,17 +24,16 @@
                 margin: auto;
             }
             /*HEADER*/
+            .header-bg {
+                background-color: white;
+            }
             .header {
                 height: 6.5vw;
                 display: flex;
                 justify-content: space-between;
             }
             .logo {
-                width: 10vw;
-                background-image: url('/images/logo.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
+                height: 6.5vw;
             }
             .head-title {
                 width: 65%;
@@ -213,193 +105,19 @@
                 font-weight: 700;
                 margin-top: -1vw;
             }
-        }
-        
-        @media (max-width: 782px) {
-            body {
-                margin: 0;
-                font-family: 'Roboto', sans-serif;
-            }
-            .container {
-                width: 90%;
-                margin: auto;
-            }
-            /*HEADER*/
-            .header {
-                height: 6.5vw;
-                display: flex;
-                justify-content: space-between;
-            }
-            .logo {
-                width: 10vw;
-                background-image: url('/images/logo.jpg');
+            /*MAIN INDEX*/
+            .main-index {
+                background-color: slategrey;
+                width: 100%;
+                height: 40vw;
+                position: relative;
+                background-image: url('/images/mountains.jpg');
                 background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
             }
-            .head-title {
-                width: 65%;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .main-title {
-                width: 100%;
-                height: 70%;
-            }
-            .t1 {
-                text-align: center;
-                color: #BD0006;
-                -webkit-text-stroke: 3.5px black;
-                font-weight: 900;
-                font-size: 4vw;
-                margin: 0
-            }
-            .under-main-title {
-                width: 100%;
-                height: 30%;
-            }
-            .t2 {
-                text-align: center;
-                color: black;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 900;
-                font-size: 1.3vw;
-                margin-top: 0.3vw;
-            }
-            .call-btn {
-                width: 25%;
-            }
-            .call-btn a {
-                text-decoration: none;
-            }
-            .call-btn-div {
-                background-color: #FFC70D;
-                border-radius: 15px;
-                width: 85%;
-                height: 5vw;
-                margin: auto;
-                margin-top: 0.8vw;
-                display: flex;
-                color: #1F4B70;
-            }
-            .call-btn-div i {
-                font-size: 3.5vw;
-                margin: 6px;
-                color: #1F4B70;
-                margin-top: 0.7vw;
-                margin-right: 1vw;
-                margin-left: 0.8vw;
-            }
-            .call-btn-div div {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .top-text {
-                width: 100%;
-                margin: 0;
-                height: 40%;
-                font-size: 1.5vw;
-                margin-top: 0.4vw;
-                color: #509CBA;
-            }
-            .bottom-text {
-                font-size: 2vw;
-                font-weight: 700;
-                margin-top: -1vw;
-            }
-        }
-        
-        @media (max-width: 599px) {
-            body {
-                margin: 0;
-                font-family: 'Roboto', sans-serif;
-            }
-            .container {
-                width: 90%;
-                margin: auto;
-            }
-            /*HEADER*/
-            .header {
-                height: 6.5vw;
-                display: flex;
-                justify-content: space-between;
-            }
-            .logo {
-                width: 10vw;
-                background-image: url('/images/logo.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-            .head-title {
-                width: 65%;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .main-title {
-                width: 100%;
-                height: 70%;
-            }
-            .t1 {
-                text-align: center;
-                color: #BD0006;
-                -webkit-text-stroke: 3.5px black;
-                font-weight: 900;
-                font-size: 4vw;
-                margin: 0
-            }
-            .under-main-title {
-                width: 100%;
-                height: 30%;
-            }
-            .t2 {
-                text-align: center;
-                color: black;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 900;
-                font-size: 1.3vw;
-                margin-top: 0.3vw;
-            }
-            .call-btn {
-                width: 25%;
-            }
-            .call-btn a {
-                text-decoration: none;
-            }
-            .call-btn-div {
-                background-color: #FFC70D;
-                border-radius: 15px;
-                width: 85%;
-                height: 5vw;
-                margin: auto;
-                margin-top: 0.8vw;
-                display: flex;
-                color: #1F4B70;
-            }
-            .call-btn-div i {
-                font-size: 3.5vw;
-                margin: 6px;
-                color: #1F4B70;
-                margin-top: 0.7vw;
-                margin-right: 1vw;
-                margin-left: 0.8vw;
-            }
-            .call-btn-div div {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .top-text {
-                width: 100%;
-                margin: 0;
-                height: 40%;
-                font-size: 1.5vw;
-                margin-top: 0.4vw;
-                color: #509CBA;
-            }
-            .bottom-text {
-                font-size: 2vw;
-                font-weight: 700;
-                margin-top: -1vw;
+            .video-index {
+                float: right;
+                height: 40vw;
             }
         }
         
@@ -409,21 +127,20 @@
                 font-family: 'Roboto', sans-serif;
             }
             .container {
-                width: 90%;
+                width: 100%;
                 margin: auto;
             }
             /*HEADER*/
+            .header-bg {
+                background-color: white;
+            }
             .header {
                 height: 6.5vw;
                 display: flex;
                 justify-content: space-between;
             }
             .logo {
-                width: 10vw;
-                background-image: url('/images/logo.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
+                height: 6.5vw;
             }
             .head-title {
                 width: 65%;
@@ -494,6 +211,20 @@
                 font-size: 2vw;
                 font-weight: 700;
                 margin-top: -1vw;
+            }
+            /*MAIN INDEX*/
+            .main-index {
+                background-color: slategrey;
+                width: 100%;
+                height: 40vw;
+                position: relative;
+                background-image: url('/images/mountains.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+            .video-index {
+                float: right;
+                display: none;
             }
         }
     </style>
@@ -653,9 +384,9 @@
 
 <body>
     <!--Header-->
-    <div style="background-color: white;">
+    <div class="header-bg">
         <div class="container header">
-            <img src="/images/logo.png" alt="CESAR’S PLUMBING LLC" style="height: 6.5vw;">
+            <img src="/images/logo.png" alt="CESAR’S PLUMBING LLC" class="logo">
             <div class="head-title">
                 <div class="main-title">
                     <h1 class="t1">CESAR’S PLUMBING LLC</h1>
@@ -679,9 +410,9 @@
     </div>
 
     <!--Main index-->
-    <div style="background-color: slategrey; width: 100%; height: 40vw; position: relative;">
+    <div class="main-index">
         <!--Video-->
-        <video autoplay muted loop id="myVideo" style="float: right; height: 40vw;">
+        <video autoplay muted loop class="video-index">
             <source src="/images/video1.mp4" type="video/mp4">
             <source src="/images/video1.mp4" type="video/ogg">
             Your browser does not support HTML5 video.
@@ -826,7 +557,7 @@
                     <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW</p>
                 </div>
                 <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-bacon" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70;"></i>
+                    <img src="/images/Excavator-b.png" style="width: 8.5vw; padding-top: 0.8vw;">
                 </div>
             </div>
             <!--COMPLETE REPIPE-->
@@ -964,145 +695,161 @@
             </div>
         </div>
 
-        <!--x/x-->
+        <!--7/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">7 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/installation-commercial-water-heater-a-100-gallons-gas/1.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--8/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">8 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/kitchen-sink-basket-strainer-leak/1.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--9/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">9 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/4.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/5.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--10/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">10 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/rebuild-and-repair-sloan-flash-valve/1.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--11/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">11 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/remove-gas-water-heater-replace-for-tankless-water-heater/1.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--12/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">12 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/4.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--13/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">13 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/3.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--14/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">14 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/3.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--15/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">15 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sink-installation/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/sink-installation/2.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--16/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">16 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/3.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--17/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">17 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/tools/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/tools/2.jpg');"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--x/x-->
+        <!--18/x-->
         <div class="mySlides">
-            <div class="numbertext">x / 18</div>
+            <div class="numbertext">18 / 18</div>
             <div class="img-container">
                 <div class="img-inner">
                     <div class="img-space">
-                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/van/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/van/3.jpg');"></div>
                     </div>
                 </div>
             </div>
@@ -1159,105 +906,105 @@
 
             <!--6/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(6)" title="Excavator">
+                <div class="demo cursor" onclick="currentSlide(6)" title="Caterpillar excavator">
                     <img src="/images/Excavator-w.png" width="55vw" style="margin-top: 0.5vw;">
-                    <p style="margin: 0;">Excavator</p>
+                    <p style="margin: 0;">Caterpillar excavator</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--7/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(7)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(7)" title="Installation commercial water heater a 100 gallons gas">
+                    <i class="fas fa-burn" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Water heater 100 gallons gas</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--8/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(8)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(8)" title="Kitchen sink basket strainer leak">
+                    <i class="fas fa-tint" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sink basket strainer leak</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--9/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(9)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(9)" title="Locate septic tank lids and clean out">
+                    <i class="fas fa-water" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Septic tank lids clean out</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--10/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(10)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(10)" title="Rebuild and repair sloan flash valve">
+                    <i class="fas fa-toilet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Repair sloan flash valve</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--11/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(11)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(11)" title="Remove gas water heater replace for tankless water heater">
+                    <i class="fas fa-burn" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Tankless water heater</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--12/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(12)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(12)" title="Repair a recirculating pump">
+                    <i class="fab fa-confluence" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Repair a recirculating pump</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--13/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(13)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(13)" title="Sewer main repair">
+                    <i class="fas fa-tools" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sewer main repair</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--14/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(14)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(14)" title="Sewer main replace">
+                    <i class="fas fa-bacon" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sewer main replace</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--15/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(15)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(15)" title="Sink installation">
+                    <i class="fas fa-faucet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sink installation</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--16/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(16)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(16)" title="Storm main repair">
+                    <i class="fas fa-grip-lines" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Storm main repair</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--17/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(17)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(17)" title="Tools">
+                    <i class="fas fa-hammer" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Tools</p>
                 </div>
             </div>
 
-            <!--x/x-->
+            <!--18/x-->
             <div class="column">
-                <div class="demo cursor" onclick="currentSlide(18)" title="Cast iron main line crack">
-                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
-                    <p style="margin: 0;">Cast iron main line crack</p>
+                <div class="demo cursor" onclick="currentSlide(18)" title="Van">
+                    <i class="fas fa-truck" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Van</p>
                 </div>
             </div>
         </div>
