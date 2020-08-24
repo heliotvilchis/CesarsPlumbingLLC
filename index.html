@@ -105,6 +105,10 @@
                 font-weight: 700;
                 margin-top: -1vw;
             }
+            /*Mobile Menu*/
+            .mobile-menu {
+                display: none;
+            }
             /*MAIN INDEX*/
             .main-index {
                 background-color: slategrey;
@@ -119,6 +123,20 @@
                 float: right;
                 height: 40vw;
             }
+            /*CC*/
+            .cc {
+                background-color: #1F4B70;
+            }
+            .heliot {
+                color: white;
+                text-decoration: none;
+                font-size: 2vw;
+                font-weight: 300;
+            }
+            .heliot p {
+                margin: 0;
+                padding: 1vw 0;
+            }
         }
         
         @media (max-width: 480px) {
@@ -127,20 +145,22 @@
                 font-family: 'Roboto', sans-serif;
             }
             .container {
-                width: 100%;
+                width: 95%;
                 margin: auto;
             }
             /*HEADER*/
             .header-bg {
                 background-color: white;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
             }
             .header {
-                height: 6.5vw;
+                height: 20vw;
                 display: flex;
                 justify-content: space-between;
             }
             .logo {
-                height: 6.5vw;
+                height: 20vw;
             }
             .head-title {
                 width: 65%;
@@ -154,9 +174,9 @@
             .t1 {
                 text-align: center;
                 color: #BD0006;
-                -webkit-text-stroke: 3.5px black;
+                -webkit-text-stroke: 0.4vw black;
                 font-weight: 900;
-                font-size: 4vw;
+                font-size: 7vw;
                 margin: 0
             }
             .under-main-title {
@@ -168,14 +188,15 @@
                 color: black;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
-                font-size: 1.3vw;
-                margin-top: 0.3vw;
+                font-size: 4vw;
+                margin-top: 2vw;
             }
             .call-btn {
                 width: 25%;
             }
             .call-btn a {
                 text-decoration: none;
+                display: none;
             }
             .call-btn-div {
                 background-color: #FFC70D;
@@ -211,6 +232,41 @@
                 font-size: 2vw;
                 font-weight: 700;
                 margin-top: -1vw;
+            }
+            /*Mobile Menu*/
+            .mobile-menu {
+                background-color: #0d2131;
+                width: 19vw;
+                height: 19vw;
+                margin: auto;
+                border-radius: 15%;
+            }
+            .menu-line-1 {
+                height: 1vw;
+                width: 15vw;
+                background-color: transparent;
+                margin: auto;
+            }
+            .menu-line-2 {
+                height: 2vw;
+                width: 15vw;
+                background-color: white;
+                margin: auto;
+                margin-top: 2.25vw
+            }
+            .menu-line-3 {
+                height: 2vw;
+                width: 13vw;
+                background-color: white;
+                margin: auto;
+                margin-top: 3.25vw;
+            }
+            .menu-line-4 {
+                height: 2vw;
+                width: 15vw;
+                background-color: white;
+                margin: auto;
+                margin-top: 3.25vw;
             }
             /*MAIN INDEX*/
             .main-index {
@@ -405,6 +461,12 @@
                         </div>
                     </div>
                 </a>
+                <div class="mobile-menu">
+                    <div class="menu-line-1"></div>
+                    <div class="menu-line-2"></div>
+                    <div class="menu-line-3"></div>
+                    <div class="menu-line-4"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1130,10 +1192,10 @@
             </div>
         </div>
         <!--CC-->
-        <div style="background-color: #1F4B70;">
+        <div class="cc">
             <div class="container">
-                <a href="#" style="color: white; text-decoration: none; font-size: 2vw; font-weight: 300;">
-                    <p style="margin: 0; padding: 1vw 0;">© Copyright 2020 Heliot Vilchis</p>
+                <a href="#" class="heliot">
+                    <p>© Copyright 2020 Heliot Vilchis</p>
                 </a>
             </div>
         </div>
