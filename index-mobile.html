@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar's plumbing LLC | Plumbing, Repairing and Construction</title>
 
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/64d5e357f6.js" crossorigin="anonymous"></script>
+
     <style>
         /*Import text*/
         
@@ -99,8 +102,8 @@
                 background-color: #ffffff8e;
                 border-radius: 2vw;
             }
-            /*Card*/
-            .card {
+            /*white-Card*/
+            .white-card {
                 width: 90vw;
                 background-color: white;
                 border-radius: 10vw 0 20vw 0;
@@ -108,31 +111,31 @@
                 color: #1F4B70;
                 margin: 3vw auto;
             }
-            .card-container {
+            .white-card-container {
                 margin: 0 0 0 10vw;
                 padding: 2vw;
             }
-            .card-text-1 {
+            .white-card-text-1 {
                 font-weight: 300;
                 margin: 0.5vw 0;
                 font-size: 9vw;
             }
-            .card-text-2 {
+            .white-card-text-2 {
                 font-weight: 600;
                 margin: 0.5vw 0;
                 font-size: 10vw;
             }
-            .card-text-3 {
+            .white-card-text-3 {
                 font-weight: 400;
                 margin: 1vw 0 3vw 0;
                 font-size: 4vw;
                 color: #509CBA;
             }
             /*Buttons*/
-            .card-button {
+            .white-card-button {
                 text-decoration: none;
             }
-            .card-button-inside {
+            .white-card-button-inside {
                 font-weight: 800;
                 background-color: #FFC70D;
                 padding: 4vw 10vw;
@@ -140,12 +143,45 @@
                 border-radius: 2vw;
                 color: #1F4B70;
             }
-            .card-button-inside p {
+            .white-card-button-inside p {
                 font-size: 4.5vw;
                 text-align: center;
             }
             .mb-3vw {
                 margin-bottom: 3vw;
+            }
+            /*yellow-division*/
+            .yellow-division {
+                background-image: linear-gradient(#FFC70D 30%, #FFEFBB);
+                color: #1F4B70;
+            }
+            .yellow-container {
+                width: 91%;
+                margin: auto;
+            }
+            .van {
+                width: 90vw;
+                height: 50vw;
+                margin: auto;
+                background-image: url('/images/van.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 3vw 0;
+            }
+            .yellow-text {
+                text-align: center;
+            }
+            .yellow-text-1 {
+                font-weight: 800;
+                font-size: 20vw;
+                margin-top: 1vw;
+            }
+            .yellow-text-2 {
+                font-weight: 400;
+                font-size: 5.5vw;
+                margin: 3vw 0;
+                padding: 0 0 3vw 0;
             }
         }
         
@@ -187,20 +223,20 @@
             <p>Licenced, bonded and insured</p>
             <p>CCB#230832</p>
         </div>
-        <!--Card-->
-        <div class="card">
-            <div class="card-container">
-                <p class="card-text-1">Got a leak?</p>
-                <p class="card-text-2">LET US FIX IT</p>
-                <p class="card-text-3">The best place to fix your leaks</p>
+        <!--white-Card-->
+        <div class="white-card">
+            <div class="white-card-container">
+                <p class="white-card-text-1">Got a leak?</p>
+                <p class="white-card-text-2">LET US FIX IT</p>
+                <p class="white-card-text-3">The best place to fix your leaks</p>
                 <!--Buttons-->
-                <a href="/contact.html" class="card-button">
-                    <div class="card-button-inside mb-3vw">
+                <a href="/contact.html" class="white-card-button">
+                    <div class="white-card-button-inside mb-3vw">
                         <p>GET A QUOTE</p>
                     </div>
                 </a>
-                <a href="#" class="card-button">
-                    <div class="card-button-inside">
+                <a href="#" class="white-card-button">
+                    <div class="white-card-button-inside">
                         <p>CALL NOW</p>
                     </div>
                 </a>
@@ -210,16 +246,24 @@
     </div>
 
     <!--Yellow division-->
-    <div style=" background-image: linear-gradient(#FFC70D 30%, #FFEFBB); ">
+    <div class="yellow-division">
 
-        <!--Van-->
-        <div style=" width: 90vw; height: 50vw; margin: auto; background-image: url( '/images/van.png' ); background-position: center; background-size: contain; background-repeat: no-repeat; padding: 3vw 0 ">
+        <div class="yellow-container">
+            <!--Van-->
+            <div class="van">
+            </div>
+            <!--Text-->
+            <div class="yellow-text">
+                <p class="yellow-text-1">We are always happy to help!</p>
+                <p class="yellow-text-2">Professional, affordable and reliable.</p>
+            </div>
         </div>
 
-        <div style=" text-align: center; ">
-            <p style=" font-weight: 800; font-size: 7vw; margin-top: 1vw ">We are always happy to help!</p>
-            <p style=" font-weight: 400; font-size: 5vw; margin: 3vw 0; padding: 0 0 3vw 0; ">Professional, affordable and reliable.</p>
-        </div>
+
+    </div>
+
+    <!--Services-->
+    <div class="services">
 
     </div>
 
