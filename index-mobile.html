@@ -20,28 +20,95 @@
             p {
                 margin: 0;
             }
+            /*Nav*/
+            .nav {
+                background-image: url('/images/mountains.jpg');
+                width: 100%;
+                height: 120vw;
+                background-position: center;
+                background-size: cover;
+            }
+            .nav-bar {
+                height: 20vw;
+                width: 90vw;
+                margin: auto;
+                padding: 2vh 0 1vh 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            .logo-w-letters {
+                display: flex;
+                text-decoration: none;
+            }
+            .top-logo {
+                width: 20vw;
+                height: 20vw;
+                background-image: url('/images/logo.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .logo-title {
+                font-size: 6.5vw;
+                font-weight: 900;
+                margin: 2vw 0;
+                color: #BD0006;
+                -webkit-text-stroke: 0.4vw black;
+            }
+            /*Menu*/
+            .menu {
+                background-color: #1F4B70;
+                width: 18vw;
+                height: 18vw;
+                border-radius: 15%;
+                box-shadow: 1vw 1vw 2vw black;
+            }
+            .menu-line-1 {
+                background-color: white;
+                height: 2vw;
+                width: 80%;
+                margin: auto;
+                border-radius: 1vw;
+                margin-top: 3vw;
+            }
+            .menu-line-2 {
+                background-color: white;
+                height: 2vw;
+                width: 70%;
+                margin: auto;
+                border-radius: 1vw;
+                margin-top: 3vw;
+            }
+            .menu-line-3 {
+                background-color: white;
+                height: 2vw;
+                width: 80%;
+                margin: auto;
+                border-radius: 1vw;
+                margin-top: 3vw;
+            }
         }
     </style>
 </head>
 
 <body>
     <!--Nav-->
-    <div style="background-image: url('/images/mountains.jpg'); width: 100%; height: 120vw; background-position: center; background-size: cover;">
-        <div style="height: 20vw; width: 90vw; margin: auto; padding: 2vh 0 1vh 0; display: flex; justify-content: space-between;">
+    <div class="nav">
+        <div class="nav-bar">
             <!--Logo with letters-->
-            <a href="#" style="display: flex; text-decoration: none;">
-                <div style="width: 20vw; height: 20vw; background-image: url('/images/logo.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
-                </div>
-                <h1 style="font-size: 6.5vw; font-weight: 900; margin: 2vw 0; color: #BD0006; -webkit-text-stroke: 0.4vw black;">
-                    CESAR’S <br> PLUMBING LLC</h1>
+            <a href="/index.html" class="logo-w-letters">
+                <div class="top-logo"></div>
+                <h1 class="logo-title">
+                    CESAR’S <br> PLUMBING LLC
+                </h1>
             </a>
             <!--Menu-->
-            <a href="#" style="background-color: #1F4B70; width: 18vw; height: 18vw; border-radius: 15%;">
-                <div style="background-color: white; height: 2vw; width: 80%; margin: auto; border-radius: 1vw; margin-top: 3vw;">
+            <a href="#" class="menu">
+                <div class="menu-line-1">
                 </div>
-                <div style="background-color: white; height: 2vw; width: 70%; margin: auto; border-radius: 1vw; margin-top: 3vw;">
+                <div class="menu-line-2">
                 </div>
-                <div style="background-color: white; height: 2vw; width: 80%; margin: auto; border-radius: 1vw; margin-top: 3vw;">
+                <div class="menu-line-3">
                 </div>
             </a>
         </div>
@@ -73,16 +140,17 @@
     </div>
 
     <!--Yellow division-->
-    <div style=" background-color: #FFC70D; ">
+    <div style=" background-image: linear-gradient(#FFC70D 30%, #FFEFBB); ">
         
         <!--Van-->
-        <div style=" background-color: tomato; width: 70vw; height: 50vw; margin: auto; background-image: url( '/images/van.png' ); background-position: center; background-size: contain; background-repeat: no-repeat; "></div>
-        
+        <div style=" width: 90vw; height: 50vw; margin: auto; background-image: url( '/images/van.png' ); background-position: center; background-size: contain; background-repeat: no-repeat; padding: 3vw 0 "></div>
+
         <div style=" text-align: center; ">
-            <p style=" font-weight: 800; font-size: 7vw; ">We are always happy to help!</p>
-            <p style=" font-weight: 400; font-size: 5vw; ">Professional, affordable and reliable.</p>
+            <p style=" font-weight: 800; font-size: 7vw; margin-top: 1vw ">We are always happy to help!</p>
+            <p style=" font-weight: 400; font-size: 5vw; margin: 3vw 0; padding: 0 0 3vw 0; ">Professional, affordable
+            and reliable.</p>
         </div>
-        
+
     </div>
 
 </body>
