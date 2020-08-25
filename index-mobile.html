@@ -87,7 +87,77 @@
                 border-radius: 1vw;
                 margin-top: 3vw;
             }
+            /*Under-text*/
+            .under-text {
+                width: 90vw;
+                margin: auto;
+                font-size: 5vw;
+                font-weight: 600;
+                text-align: center;
+                color: black;
+                background-size: auto;
+                background-color: #ffffff8e;
+                border-radius: 2vw;
+            }
+            /*Card*/
+            .card {
+                width: 90vw;
+                background-color: white;
+                border-radius: 10vw 0 20vw 0;
+                box-shadow: 1vw 1vw 1vw black;
+                color: #1F4B70;
+                margin: 3vw auto;
+            }
+            .card-container {
+                margin: 0 0 0 10vw;
+                padding: 2vw;
+            }
+            .card-text-1 {
+                font-weight: 300;
+                margin: 0.5vw 0;
+                font-size: 9vw;
+            }
+            .card-text-2 {
+                font-weight: 600;
+                margin: 0.5vw 0;
+                font-size: 10vw;
+            }
+            .card-text-3 {
+                font-weight: 400;
+                margin: 1vw 0 3vw 0;
+                font-size: 4vw;
+                color: #509CBA;
+            }
+            /*Buttons*/
+            .card-button {
+                text-decoration: none;
+            }
+            .card-button-inside {
+                font-weight: 800;
+                background-color: #FFC70D;
+                padding: 4vw 10vw;
+                width: 45vw;
+                border-radius: 2vw;
+                color: #1F4B70;
+            }
+            .card-button-inside p {
+                font-size: 4.5vw;
+                text-align: center;
+            }
+            .mb-3vw {
+                margin-bottom: 3vw;
+            }
         }
+        
+        @media (max-width: 480px) {}
+        
+        @media (max-width: 599px) {}
+        
+        @media (max-width: 782px) {}
+        
+        @media (max-width: 1024px) {}
+        
+        @media (max-width: 1360px) {}
     </style>
 </head>
 
@@ -112,43 +182,43 @@
                 </div>
             </a>
         </div>
-        <div style="width: 90vw; margin: auto; font-size: 5vw; font-weight: 600; text-align: center; color: black; background-size: auto; background-color: #ffffff8e; border-radius: 2vw;" ">
+        <!--Under-text-->
+        <div class="under-text">
             <p>Licenced, bonded and insured</p>
             <p>CCB#230832</p>
         </div>
         <!--Card-->
-        <div style=" width: 90vw; background-color: white; border-radius: 10vw 0 20vw 0; box-shadow: 1vw 1vw 1vw black; color: #1F4B70; margin: 3vw auto; ">
-            <div style=" margin: 0 0 0 10vw; padding: 2vw; ">
-            <p style=" font-weight: 300; margin: 0.5vw 0; font-size: 9vw; ">Got a leak?</p>
-            <p style=" font-weight: 600; margin: 0.5vw 0; font-size: 10vw; ">LET US FIX IT</p>
-            <p style=" font-weight: 400; margin: 1vw 0 3vw 0; font-size: 4vw; color: #509CBA; ">The best place to fix
-                your leaks</p>
-            <a href=" # " style=" text-decoration: none; ">
-                <div style=" font-weight: 800; background-color: #FFC70D; padding: 4vw 10vw; width: 45vw; margin-bottom: 3vw; border-radius: 2vw; color: #1F4B70; ">
-                    <p style=" margin: 0; font-size: 4.5vw; text-align: center; ">GET A QUOTE</p>
-        </div>
-        </a>
-        <a href=" # " style=" text-decoration: none; ">
-            <div
-                style=" font-weight: 800; background-color: #FFC70D; padding: 4vw 10vw; width: 45vw; border-radius: 2vw; color: #1F4B70; ">
-                <p style=" margin: 0; font-size: 4.5vw; text-align: center; ">CALL NOW</p>
+        <div class="card">
+            <div class="card-container">
+                <p class="card-text-1">Got a leak?</p>
+                <p class="card-text-2">LET US FIX IT</p>
+                <p class="card-text-3">The best place to fix your leaks</p>
+                <!--Buttons-->
+                <a href="/contact.html" class="card-button">
+                    <div class="card-button-inside mb-3vw">
+                        <p>GET A QUOTE</p>
+                    </div>
+                </a>
+                <a href="#" class="card-button">
+                    <div class="card-button-inside">
+                        <p>CALL NOW</p>
+                    </div>
+                </a>
             </div>
-        </a>
-    </div>
-    </div>
+        </div>
 
     </div>
 
     <!--Yellow division-->
     <div style=" background-image: linear-gradient(#FFC70D 30%, #FFEFBB); ">
-        
+
         <!--Van-->
-        <div style=" width: 90vw; height: 50vw; margin: auto; background-image: url( '/images/van.png' ); background-position: center; background-size: contain; background-repeat: no-repeat; padding: 3vw 0 "></div>
+        <div style=" width: 90vw; height: 50vw; margin: auto; background-image: url( '/images/van.png' ); background-position: center; background-size: contain; background-repeat: no-repeat; padding: 3vw 0 ">
+        </div>
 
         <div style=" text-align: center; ">
             <p style=" font-weight: 800; font-size: 7vw; margin-top: 1vw ">We are always happy to help!</p>
-            <p style=" font-weight: 400; font-size: 5vw; margin: 3vw 0; padding: 0 0 3vw 0; ">Professional, affordable
-            and reliable.</p>
+            <p style=" font-weight: 400; font-size: 5vw; margin: 3vw 0; padding: 0 0 3vw 0; ">Professional, affordable and reliable.</p>
         </div>
 
     </div>
