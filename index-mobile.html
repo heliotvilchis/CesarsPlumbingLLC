@@ -271,6 +271,10 @@
                 font-size: 22vw;
                 margin-top: 3vw;
             }
+            .excavator-icon {
+                width: 24vw;
+                padding-top: 2vw;
+            }
         }
         
         @media (max-width: 480px) {}
@@ -282,6 +286,155 @@
         @media (max-width: 1024px) {}
         
         @media (max-width: 1360px) {}
+        
+        < !--Images style--><style>img {
+            vertical-align: middle;
+        }
+        /* Position the image container (needed to position the left and right arrows) */
+        
+        .container {
+            position: relative;
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+            background-image: url('/images/pipes-photos.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        /* Add a pointer when hovering over the thumbnail images */
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 21vw;
+            width: auto;
+            padding: 1vw;
+            margin-top: -5vw;
+            color: #1F4B70;
+            font-weight: bold;
+            font-size: 5vw;
+            border-radius: 0 15px 15px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the"next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: hsla(46, 100%, 53%, 0.8);
+        }
+        /* Number text (1/17 etc) */
+        
+        .numbertext {
+            color: #509CBA;
+            font-size: 1vw;
+            padding: 8px 12px;
+            position: absolute;
+            top: 9vw;
+        }
+        /* Container for image text */
+        
+        .caption-container {
+            text-align: center;
+            background-color: #FFC70D;
+            color: #1F4B70;
+            font-size: 1.5vw;
+            font-weight: 900;
+            padding: 0.5vw;
+            border-radius: 15px 15px 0 0;
+            text-transform: uppercase;
+            text-shadow: -0.1vw 0.1vw rgba(255, 255, 255, 0.8);
+        }
+        
+        .caption-container p {
+            margin: 0;
+        }
+        
+        .row {
+            background-image: linear-gradient(#FFC70D 30%, #FFEFBB);
+            border-radius: 0 0 15px 15px;
+            padding: 0 1vw 1vw 1vw;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Six columns side by side */
+        
+        .column {
+            float: left;
+            width: 9.9%;
+            background-color: #0d2131;
+            margin: 0.1% 0.1% 0 0;
+            border-radius: 15px;
+        }
+        /* Add a transparency effect for thumnbail images */
+        
+        .demo {
+            opacity: 0.6;
+            width: 100%;
+            height: 6vw;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 1vw;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        .img-container {
+            height: 25vw
+        }
+        
+        .img-inner {
+            padding: 1.4vw;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img-space {
+            width: 90%;
+            height: 22.3vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .image-format {
+            width: 20%;
+            background-image: url('/images/1-14-water-main-repair/1.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .main-images {
+            width: 20%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
     </style>
 </head>
 
@@ -397,213 +550,645 @@
             <div class="card">
                 <div class="card-top bg-dark-blue">
                     <h3 class="card-top-title">
-                        NEW CONSTRUCTION AND REMODELING
+                        MANTAINANCE AND REPAIR
                     </h3>
                     <div class="card-top-text">
                         <p>
-                            We offer our services for commercial and residential plumbing
+                            We service all kinds of commercial and ressidential and all types of facets, sinks
                         </p>
                     </div>
                 </div>
                 <div class="card-bottom bg-yellow">
                 </div>
                 <div class="card-icon bg-yellow color-dark-blue">
-                    <i class="fas fa-wrench"></i>
+                    <i class="fas fa-toolbox"></i>
                 </div>
             </div>
             <!--DRAIN EXCAVATION AND REPAIR-->
             <div class="card">
                 <div class="card-top bg-dark-blue">
                     <h3 class="card-top-title">
-                        NEW CONSTRUCTION AND REMODELING
+                        DRAIN EXCAVATION AND REPAIR
                     </h3>
                     <div class="card-top-text">
                         <p>
-                            We offer our services for commercial and residential plumbing
+                            Preventive plumbing work or repair of your French drain or storm drain
                         </p>
                     </div>
                 </div>
                 <div class="card-bottom bg-yellow">
                 </div>
                 <div class="card-icon bg-yellow color-dark-blue">
-                    <i class="fas fa-wrench"></i>
+                    <img src="/images/Excavator-b.png" class="excavator-icon">
                 </div>
             </div>
             <!--COMPLETE REPIPE-->
             <div class="card">
                 <div class="card-top bg-dark-blue">
                     <h3 class="card-top-title">
-                        NEW CONSTRUCTION AND REMODELING
+                        COMPLETE REPIPE
                     </h3>
                     <div class="card-top-text">
                         <p>
-                            We offer our services for commercial and residential plumbing
+                            Gas line <br> Sewer line <br> Potable water
                         </p>
                     </div>
                 </div>
                 <div class="card-bottom bg-yellow">
                 </div>
                 <div class="card-icon bg-yellow color-dark-blue">
-                    <i class="fas fa-wrench"></i>
+                    <i class="fab fa-confluence"></i>
                 </div>
             </div>
             <!--ALL TYPE WATER HEATERS-->
             <div class="card">
                 <div class="card-top bg-dark-blue">
                     <h3 class="card-top-title">
-                        NEW CONSTRUCTION AND REMODELING
+                        ALL TYPE WATER HEATERS
                     </h3>
                     <div class="card-top-text">
                         <p>
-                            We offer our services for commercial and residential plumbing
+                            Tank less water heaters <br> Electric water heaters <br> Gas water heaters
                         </p>
                     </div>
                 </div>
                 <div class="card-bottom bg-yellow">
                 </div>
                 <div class="card-icon bg-yellow color-dark-blue">
-                    <i class="fas fa-wrench"></i>
+                    <i class="fas fa-water"></i>
                 </div>
             </div>
             <!--SEWER SCOPES-->
             <div class="card">
                 <div class="card-top bg-dark-blue">
                     <h3 class="card-top-title">
-                        NEW CONSTRUCTION AND REMODELING
+                        SEWER SCOPES
                     </h3>
                     <div class="card-top-text">
                         <p>
-                            We offer our services for commercial and residential plumbing
+                            Sewer locates <br> Sewer hydro jetter <br> Sewer snakes <br> Main lines
                         </p>
                     </div>
                 </div>
                 <div class="card-bottom bg-yellow">
                 </div>
                 <div class="card-icon bg-yellow color-dark-blue">
-                    <i class="fas fa-wrench"></i>
+                    <i class="fas fa-eye"></i>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--Images-->
+    <div class="container">
+        <h3 style="text-align: center; font-size: 4vw; margin: 6vw 0 0 0 ; color: #1F4B70;">OUR PUMBLING PROJECTS</h3>
+        <p style="text-align: center; font-size: 2vw; margin: 0 0 1vw 0; color: #1F4B70;">You can trust our plumbers and the quality and professionalism of our work.</p>
 
-    <!--Services-->
-    <div class="container" style="text-align: center; color: #1F4B70;">
-        <h2 style="font-size: 6vw; font-weight: 800;">Plumbing Services</h2>
-        <p style="font-size: 2.5vw; font-weight: 300; margin: 0;">You can trust the quality and professionalism of our work. We will arrive at your home driving a vehicle stocked with all the necessary equipment and tools to tackle any plumbing problem.</p>
-        <!--All cards-->
-        <div style="background-color: transparent; display: flex; flex-wrap: wrap; justify-content: space-between;">
-            <!--24/7 EMERGENCY SERVICE-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">24/7 EMERGENCY SERVICE</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">You can count on us for any plumbing emergency or water damage 7 days a week. Our services are available at any time of the day or night. Contact us now, we can quickly resolve your problem!</p>
+        <!--1/x-->
+        <div class="mySlides">
+            <div class="numbertext">2 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/custom-shower-bathroom/shower1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/custom-shower-bathroom/shower2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/custom-shower-bathroom/shower3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/custom-shower-bathroom/shower4.jpg');"></div>
                     </div>
-                </div>
-                <div style="background-color: #BD0006; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: white; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #BD0006; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-exclamation-triangle" style="font-size: 7vw; margin-top: 1vw; color: white;"></i>
                 </div>
             </div>
-            <!--NEW CONSTRUCTION AND REMODELING-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">NEW CONSTRUCTION AND REMODELING</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">We offer our services for commercial and residential plumbing</p>
+        </div>
+
+        <!--2/x-->
+        <div class="mySlides">
+            <div class="numbertext">2 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/toilet-gasket-replace/1.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/toilet-gasket-replace/2.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/toilet-gasket-replace/3.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/toilet-gasket-replace/4.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/toilet-gasket-replace/5.jpg');">
+                        </div>
                     </div>
-                </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-wrench" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70;"></i>
                 </div>
             </div>
-            <!--MANTAINANCE AND REPAIR-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">MANTAINANCE AND REPAIR</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">We service all kinds of commercial and ressidential and all types of facets, sinks</p>
+        </div>
+
+        <!--3/x-->
+        <div class="mySlides">
+            <div class="numbertext">3 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/1-14-water-main-repair/1.jpg');">
+                        </div>
                     </div>
-                </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-toolbox" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70;"></i>
                 </div>
             </div>
-            <!--DRAIN EXCAVATION AND REPAIR-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">DRAIN EXCAVATION AND REPAIR</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">Preventive plumbing work or repair of your French drain or storm drain</p>
+        </div>
+
+        <!--4/x-->
+        <div class="mySlides">
+            <div class="numbertext">4 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/cast-iron-main-line-crack/1.jpg');"></div>
                     </div>
-                </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <img src="/images/Excavator-b.png" style="width: 8.5vw; padding-top: 0.8vw;">
                 </div>
             </div>
-            <!--COMPLETE REPIPE-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">COMPLETE REPIPE</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">Gas line <br> Sewer line <br> Potable water</p>
+        </div>
+
+        <!--5/x-->
+        <div class="mySlides">
+            <div class="numbertext">5 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/custom-bathroom-and-shower/1.jpg');"></div>
                     </div>
-                </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fab fa-confluence" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70;"></i>
                 </div>
             </div>
-            <!--ALL TYPE WATER HEATERS-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">ALL TYPE WATER HEATERS</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">Tank less water heaters <br> Electric water heaters <br> Gas water heaters</p>
+        </div>
+
+        <!--6/x-->
+        <div class="mySlides">
+            <div class="numbertext">6 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/excavator/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/excavator/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/excavator/3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/excavator/4.jpg');"></div>
                     </div>
-                </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
-                </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-water" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70;"></i>
                 </div>
             </div>
-            <!--SEWER SCOPES-->
-            <div style="background-color: red; width: 25vw; height: 25vw; border-radius: 15px; margin-top: 8vw;">
-                <div style="background-color: #1F4B70; height: 80%; border-radius: 15px 15px 0 0; color: white;">
-                    <h3 style="margin: 0; padding-top: 6vw; font-size: 1.7vw;">SEWER SCOPES</h3>
-                    <div style="width: 90%; margin: auto;">
-                        <p style="margin: 0; font-size: 1.4vw; font-weight: 300; margin-top: 1vw;">Sewer locates <br> Sewer hydro jetter <br> Sewer snakes <br> Main lines</p>
+        </div>
+
+        <!--7/x-->
+        <div class="mySlides">
+            <div class="numbertext">7 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/installation-commercial-water-heater-a-100-gallons-gas/1.jpg');">
+                        </div>
                     </div>
                 </div>
-                <div style="background-color: #FFC70D; height: 20%; border-radius: 0 0 15px 15px;">
-                    <p style="margin: 0; color: #1F4B70; font-weight: 900; font-size: 3vw; padding-top: 0.7vw;">CALL NOW
-                    </p>
+            </div>
+        </div>
+
+        <!--8/x-->
+        <div class="mySlides">
+            <div class="numbertext">8 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/kitchen-sink-basket-strainer-leak/1.jpg');"></div>
+                    </div>
                 </div>
-                <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin-top: -30vw; margin-left: 7.5vw; border-radius: 15px;">
-                    <i class="fas fa-eye" style="font-size: 7vw; margin-top: 1vw; color: #1F4B70"></i>
+            </div>
+        </div>
+
+        <!--9/x-->
+        <div class="mySlides">
+            <div class="numbertext">9 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/4.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/locate-septic-tank-lids-and-clean-out/5.jpg');"></div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <!--10/x-->
+        <div class="mySlides">
+            <div class="numbertext">10 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/rebuild-and-repair-sloan-flash-valve/1.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--11/x-->
+        <div class="mySlides">
+            <div class="numbertext">11 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/remove-gas-water-heater-replace-for-tankless-water-heater/1.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--12/x-->
+        <div class="mySlides">
+            <div class="numbertext">12 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/3.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/repair-a-recirculating-pump/4.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--13/x-->
+        <div class="mySlides">
+            <div class="numbertext">13 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/1.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/2.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-repair/3.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--14/x-->
+        <div class="mySlides">
+            <div class="numbertext">14 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/1.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/2.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/sewer-main-replace/3.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--15/x-->
+        <div class="mySlides">
+            <div class="numbertext">15 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/sink-installation/1.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/sink-installation/2.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--16/x-->
+        <div class="mySlides">
+            <div class="numbertext">16 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/1.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/2.jpg');">
+                        </div>
+                        <div class="main-images" style="background-image: url('/images/storm-main-repair/3.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--17/x-->
+        <div class="mySlides">
+            <div class="numbertext">17 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/tools/1.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/tools/2.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--18/x-->
+        <div class="mySlides">
+            <div class="numbertext">18 / 18</div>
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="img-space">
+                        <div class="main-images" style="background-image: url('/images/van/2.jpg');"></div>
+                        <div class="main-images" style="background-image: url('/images/van/3.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row" style="padding: 0 1vw 1vw 1vw;">
+
+            <!--1/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(1)" title="Custom shower bathroom">
+                    <i class="fas fa-shower" style="font-size: 3vw; margin: 0.25vw 0 0 0;"></i>
+                    <p style="margin: 0;">Custom shower bathroom</p>
+                </div>
+            </div>
+
+            <!--2/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(2)" title="Toilet gasket replace">
+                    <i class="fas fa-toilet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Toilet gasket replace</p>
+                </div>
+            </div>
+
+            <!--3/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(3)" title="1&quot; 1&#47;4 water main repair">
+                    <i class="fas fa-wrench" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;"> 1&quot; 1&#47;4 water main repair</p>
+                </div>
+            </div>
+
+            <!--4/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(4)" title="Cast iron main line crack">
+                    <i class="fas fa-toolbox" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Cast iron main line crack</p>
+                </div>
+            </div>
+
+            <!--5/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(5)" title="Custom bathroom and shower">
+                    <i class="fas fa-restroom" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Custom bathroom and shower</p>
+                </div>
+            </div>
+
+            <!--6/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(6)" title="Caterpillar excavator">
+                    <img src="/images/Excavator-w.png" width="55vw" style="margin-top: 0.5vw;">
+                    <p style="margin: 0;">Caterpillar excavator</p>
+                </div>
+            </div>
+
+            <!--7/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(7)" title="Installation commercial water heater a 100 gallons gas">
+                    <i class="fas fa-burn" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Water heater 100 gallons gas</p>
+                </div>
+            </div>
+
+            <!--8/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(8)" title="Kitchen sink basket strainer leak">
+                    <i class="fas fa-tint" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sink basket strainer leak</p>
+                </div>
+            </div>
+
+            <!--9/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(9)" title="Locate septic tank lids and clean out">
+                    <i class="fas fa-water" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Septic tank lids clean out</p>
+                </div>
+            </div>
+
+            <!--10/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(10)" title="Rebuild and repair sloan flash valve">
+                    <i class="fas fa-toilet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Repair sloan flash valve</p>
+                </div>
+            </div>
+
+            <!--11/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(11)" title="Remove gas water heater replace for tankless water heater">
+                    <i class="fas fa-burn" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Tankless water heater</p>
+                </div>
+            </div>
+
+            <!--12/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(12)" title="Repair a recirculating pump">
+                    <i class="fab fa-confluence" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Repair a recirculating pump</p>
+                </div>
+            </div>
+
+            <!--13/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(13)" title="Sewer main repair">
+                    <i class="fas fa-tools" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sewer main repair</p>
+                </div>
+            </div>
+
+            <!--14/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(14)" title="Sewer main replace">
+                    <i class="fas fa-bacon" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sewer main replace</p>
+                </div>
+            </div>
+
+            <!--15/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(15)" title="Sink installation">
+                    <i class="fas fa-faucet" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Sink installation</p>
+                </div>
+            </div>
+
+            <!--16/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(16)" title="Storm main repair">
+                    <i class="fas fa-grip-lines" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Storm main repair</p>
+                </div>
+            </div>
+
+            <!--17/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(17)" title="Tools">
+                    <i class="fas fa-hammer" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Tools</p>
+                </div>
+            </div>
+
+            <!--18/x-->
+            <div class="column">
+                <div class="demo cursor" onclick="currentSlide(18)" title="Van">
+                    <i class="fas fa-truck" style="font-size: 3vw; margin: 0.4vw 0 0 0;"></i>
+                    <p style="margin: 0;">Van</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].title;
+        }
+    </script>
+
+    <!--Process-->
+    <div style="text-align: center; color: #1F4B70;">
+        <div class="container">
+            <!--title-->
+            <p style="margin: 6vw 0 0 0; font-size: 6vw; font-weight: 700; margin-bottom: 8vw;">OUR PROCESS</p>
+            <!--table-->
+            <div style="background-color: white; display: flex; border-radius: 15px; border-style: solid; border-width: 0.7vw;">
+                <!--1-->
+                <div style="width: 25%; margin-top: -6vw;">
+                    <!--Circle-->
+                    <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
+                        <p style="color: #1F4B70; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">1</p>
+                    </div>
+                    <!--Text-->
+                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
+                        <div style="margin: 1vw;">
+                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Call Plumbing</p>
+                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">Let us know about your project or problem <br> <br> <br> <br></p>
+                        </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div style="width: 25%; margin-top: -6vw;">
+                    <!--Circle-->
+                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
+                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">2</p>
+                    </div>
+                    <!--Text-->
+                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
+                        <div style="margin: 1vw;">
+                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Review the issue</p>
+                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">You can trust our plumbers and the quality and professionalism of our work <br> <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div style="width: 25%; margin-top: -6vw;">
+                    <!--Circle-->
+                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
+                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">3</p>
+                    </div>
+                    <!--Text-->
+                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
+                        <div style="margin: 1vw;">
+                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Start fixing</p>
+                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">We will arrive at your home driving a vehicle stocked with all the necessary equipment and tools quickly <br>
+                                <br></p>
+                        </div>
+                    </div>
+                </div>
+                <!--4-->
+                <div style="width: 25%; margin-top: -6vw;">
+                    <!--Circle-->
+                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
+                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">4</p>
+                    </div>
+                    <!--Text-->
+                    <div>
+                        <div style="margin: 1vw;">
+                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 700;">Complete project</p>
+                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">Our experienced handymen always repair broken or leaky fixtures in order to avoid costly replacements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <!--Margin top must be the minus half of table-->
+    <div style="background-image: url( '/images/bottom-image.jpg'); width: 100%; height: 54vw; margin-top: -15vw; z-index: -5; position: absolute;">
+        <!--Text-->
+        <div style="width: 100%; height: 54vw; background-color: hsla(207, 57%, 28%, 0.80);">
+            <!--Padding top must be the same as margin top of main div-->
+            <div class="container" style="padding-top: 15vw; text-align: center; color: white; font-size: 3vw;">
+                <!--Logo-->
+                <div style="background-image: url( '/images/logo.png'); width: 10vw; height: 10vw; background-position: center; background-repeat: no-repeat; background-size: contain; margin: 1vw auto;">
+                </div>
+                <!--Text-->
+                <a href="#" style="text-decoration: none; color: white; font-weight: 300;">CALL US: <Span
+                        style="font-weight: 600;">503 338 8032</Span></a>
+                <p style="font-weight: 300;">Oregon, USA</p>
+                <p style="font-weight: 500;">CCB #230832</p>
+                <a href="#" style="color: #1F4B70; text-decoration: none; background-color: #FFC70D; padding: 1vw 3vw; font-size: 3vw; font-weight: 300; border-radius: 15px;">Request
+                    a Free Quote</a>
+            </div>
+        </div>
+        <!--CC-->
+        <div class="cc">
+            <div class="container">
+                <a href="#" class="heliot">
+                    <p>© Copyright 2020 Heliot Vilchis</p>
+                </a>
             </div>
         </div>
     </div>
