@@ -9,6 +9,158 @@
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/64d5e357f6.js" crossorigin="anonymous"></script>
 
+
+    <!--Images style-->
+    <style>
+        img {
+            vertical-align: middle;
+        }
+        /* Position the image container (needed to position the left and right arrows) */
+        
+        .container {
+            position: relative;
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+            background-image: url('/images/pipes-photos.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        /* Add a pointer when hovering over the thumbnail images */
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 21vw;
+            width: auto;
+            padding: 1vw;
+            margin-top: -5vw;
+            color: #1F4B70;
+            font-weight: bold;
+            font-size: 5vw;
+            border-radius: 0 15px 15px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the"next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: hsla(46, 100%, 53%, 0.8);
+        }
+        /* Number text (1/17 etc) */
+        
+        .numbertext {
+            color: #509CBA;
+            font-size: 1vw;
+            padding: 8px 12px;
+            position: absolute;
+            top: 9vw;
+        }
+        /* Container for image text */
+        
+        .caption-container {
+            text-align: center;
+            background-color: #FFC70D;
+            color: #1F4B70;
+            font-size: 1.5vw;
+            font-weight: 900;
+            padding: 0.5vw;
+            border-radius: 15px 15px 0 0;
+            text-transform: uppercase;
+            text-shadow: -0.1vw 0.1vw rgba(255, 255, 255, 0.8);
+        }
+        
+        .caption-container p {
+            margin: 0;
+        }
+        
+        .row {
+            background-image: linear-gradient(#FFC70D 30%, #FFEFBB);
+            border-radius: 0 0 15px 15px;
+            padding: 0 1vw 1vw 1vw;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Six columns side by side */
+        
+        .column {
+            float: left;
+            width: 9.9%;
+            background-color: #0d2131;
+            margin: 0.1% 0.1% 0 0;
+            border-radius: 15px;
+        }
+        /* Add a transparency effect for thumnbail images */
+        
+        .demo {
+            opacity: 0.6;
+            width: 100%;
+            height: 6vw;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 1vw;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        .img-container {
+            height: 25vw
+        }
+        
+        .img-inner {
+            padding: 1.4vw;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img-space {
+            width: 90%;
+            height: 22.3vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .image-format {
+            width: 20%;
+            background-image: url('/images/1-14-water-main-repair/1.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .main-images {
+            width: 20%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+
     <style>
         /*Import text*/
         
@@ -275,6 +427,59 @@
                 width: 24vw;
                 padding-top: 2vw;
             }
+            /*Images*/
+            .images {
+                width: 100%;
+                margin: auto;
+            }
+            .images-test-1 {
+                text-align: center;
+                font-size: 12vw;
+                margin: 6vw 0 0 0;
+                color: #1F4B70;
+                font-weight: 800;
+            }
+            .images-test-2 {
+                text-align: center;
+                font-size: 5vw;
+                margin: 0 0 3vw 0;
+                color: #1F4B70;
+                font-weight: 400;
+            }
+            .mySlides {
+                background-image: url('/images/pipes-photos.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .numbertext {
+                color: #509CBA;
+                font-size: 1vw;
+                padding: 8px 12px;
+                position: absolute;
+                top: 9vw;
+            }
+            .img-container {
+                height: 60vw;
+            }
+            .img-inner {
+                padding: 1.4vw;
+                display: flex;
+                justify-content: center;
+            }
+            .img-space {
+                width: 99%;
+                height: 55vw;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: aqua;
+            }
+            .main-images {
+                width: 20%;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
         
         @media (max-width: 480px) {}
@@ -286,156 +491,9 @@
         @media (max-width: 1024px) {}
         
         @media (max-width: 1360px) {}
-        
-        < !--Images style--><style>img {
-            vertical-align: middle;
-        }
-        /* Position the image container (needed to position the left and right arrows) */
-        
-        .container {
-            position: relative;
-        }
-        /* Hide the images by default */
-        
-        .mySlides {
-            display: none;
-            background-image: url('/images/pipes-photos.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 15px;
-        }
-        /* Add a pointer when hovering over the thumbnail images */
-        
-        .cursor {
-            cursor: pointer;
-        }
-        /* Next & previous buttons */
-        
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 21vw;
-            width: auto;
-            padding: 1vw;
-            margin-top: -5vw;
-            color: #1F4B70;
-            font-weight: bold;
-            font-size: 5vw;
-            border-radius: 0 15px 15px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-        /* Position the"next button" to the right */
-        
-        .next {
-            right: 0;
-            border-radius: 15px 0 0 15px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        
-        .prev:hover,
-        .next:hover {
-            background-color: hsla(46, 100%, 53%, 0.8);
-        }
-        /* Number text (1/17 etc) */
-        
-        .numbertext {
-            color: #509CBA;
-            font-size: 1vw;
-            padding: 8px 12px;
-            position: absolute;
-            top: 9vw;
-        }
-        /* Container for image text */
-        
-        .caption-container {
-            text-align: center;
-            background-color: #FFC70D;
-            color: #1F4B70;
-            font-size: 1.5vw;
-            font-weight: 900;
-            padding: 0.5vw;
-            border-radius: 15px 15px 0 0;
-            text-transform: uppercase;
-            text-shadow: -0.1vw 0.1vw rgba(255, 255, 255, 0.8);
-        }
-        
-        .caption-container p {
-            margin: 0;
-        }
-        
-        .row {
-            background-image: linear-gradient(#FFC70D 30%, #FFEFBB);
-            border-radius: 0 0 15px 15px;
-            padding: 0 1vw 1vw 1vw;
-        }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        /* Six columns side by side */
-        
-        .column {
-            float: left;
-            width: 9.9%;
-            background-color: #0d2131;
-            margin: 0.1% 0.1% 0 0;
-            border-radius: 15px;
-        }
-        /* Add a transparency effect for thumnbail images */
-        
-        .demo {
-            opacity: 0.6;
-            width: 100%;
-            height: 6vw;
-            margin: auto;
-            text-align: center;
-            color: white;
-            font-size: 1vw;
-        }
-        
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-        
-        .img-container {
-            height: 25vw
-        }
-        
-        .img-inner {
-            padding: 1.4vw;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .img-space {
-            width: 90%;
-            height: 22.3vw;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .image-format {
-            width: 20%;
-            background-image: url('/images/1-14-water-main-repair/1.jpg');
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        
-        .main-images {
-            width: 20%;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
     </style>
-    </style>
+
+
 </head>
 
 <body>
@@ -640,9 +698,13 @@
     </div>
 
     <!--Images-->
-    <div class="container">
-        <h3 style="text-align: center; font-size: 4vw; margin: 6vw 0 0 0 ; color: #1F4B70;">OUR PUMBLING PROJECTS</h3>
-        <p style="text-align: center; font-size: 2vw; margin: 0 0 1vw 0; color: #1F4B70;">You can trust our plumbers and the quality and professionalism of our work.</p>
+    <div class="images">
+        <h3 class="images-test-1">
+            OUR PUMBLING PROJECTS
+        </h3>
+        <p class="images-test-2">
+            You can trust our plumbers and the quality and professionalism of our work.
+        </p>
 
         <!--1/x-->
         <div class="mySlides">
