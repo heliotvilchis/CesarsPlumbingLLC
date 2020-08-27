@@ -399,6 +399,80 @@
             .demo:hover {
                 opacity: 1;
             }
+            /*Process*/
+            .process {
+                width: 91%;
+                text-align: center;
+                color: #1F4B70;
+                margin: auto;
+            }
+            .process-text-1 {
+                margin: 6vw 0 0 0;
+                font-size: 15vw;
+                font-weight: 700;
+                margin-bottom: 15vw;
+            }
+            .process-table {
+                background-color: white;
+                display: flex;
+                border-radius: 5vw;
+                border-style: solid;
+                border-width: 2vw;
+                flex-wrap: wrap;
+            }
+            .process-div {
+                width: 100%;
+                margin-top: -15vw;
+            }
+            .process-circle {
+                background-color: #FFC70D;
+                width: 30vw;
+                height: 30vw;
+                margin: 10vw auto 0 auto;
+                border-radius: 50%;
+                border-color: white;
+                border-style: solid;
+                border-width: 2vw;
+            }
+            .process-circle p {
+                color: #1F4B70;
+                font-size: 25vw;
+                font-weight: 500;
+                margin: 0vw;
+                padding: 0vw;
+            }
+            .process-text-box {
+                border-color: #509CBA;
+                border-style: none solid none none;
+                border-width: 0.3vw;
+            }
+            .process-text-margin {
+                margin: 1vw;
+            }
+            .process-text-box-1 {
+                font-size: 9vw;
+                margin: 1vw;
+                font-weight: 600;
+            }
+            .process-text-box-2 {
+                font-size: 7vw;
+                margin: 3vw 0 3vw 0;
+                font-weight: 300;
+            }
+            /*CC*/
+            .cc {
+                background-color: #1F4B70;
+            }
+            .heliot {
+                color: white;
+                text-decoration: none;
+                font-size: 2vw;
+                font-weight: 300;
+            }
+            .heliot p {
+                margin: 0;
+                padding: 1vw 0;
+            }
         }
         
         @media (max-width: 480px) {}
@@ -1077,68 +1151,69 @@
     </script>
 
     <!--Process-->
-    <div style="text-align: center; color: #1F4B70;">
-        <div class="container">
-            <!--title-->
-            <p style="margin: 6vw 0 0 0; font-size: 6vw; font-weight: 700; margin-bottom: 8vw;">OUR PROCESS</p>
-            <!--table-->
-            <div style="background-color: white; display: flex; border-radius: 15px; border-style: solid; border-width: 0.7vw;">
-                <!--1-->
-                <div style="width: 25%; margin-top: -6vw;">
-                    <!--Circle-->
-                    <div style="background-color: #FFC70D; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
-                        <p style="color: #1F4B70; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">1</p>
-                    </div>
-                    <!--Text-->
-                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
-                        <div style="margin: 1vw;">
-                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Call Plumbing</p>
-                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">Let us know about your project or problem <br> <br> <br> <br></p>
-                        </div>
+    <div class="process">
+        <!--title-->
+        <p class="process-text-1">OUR PROCESS
+        </p>
+        <!--table-->
+        <div class="process-table">
+            <!--1-->
+            <div class="process-div">
+                <!--Circle-->
+                <div class="process-circle">
+                    <p>1</p>
+                </div>
+                <!--Text-->
+                <div class="process-text-box">
+                    <div class="process-text-margin">
+                        <p class="process-text-box-1">Call Plumbing
+                        </p>
+                        <p class="process-text-box-2">Let us know about your project or problem <br> <br> <br> <br></p>
                     </div>
                 </div>
-                <!--2-->
-                <div style="width: 25%; margin-top: -6vw;">
-                    <!--Circle-->
-                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
-                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">2</p>
-                    </div>
-                    <!--Text-->
-                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
-                        <div style="margin: 1vw;">
-                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Review the issue</p>
-                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">You can trust our plumbers and the quality and professionalism of our work <br> <br>
-                            </p>
-                        </div>
+            </div>
+            <!--2-->
+            <div class="process-div">
+                <!--Circle-->
+                <div class="process-circle">
+                    <p>2</p>
+                </div>
+                <!--Text-->
+                <div class="process-text-box">
+                    <div class="process-text-margin">
+                        <p class="process-text-box-1">Review the issue</p>
+                        <p class="process-text-box-2">You can trust our plumbers and the quality and professionalism of our work <br> <br>
+                        </p>
                     </div>
                 </div>
-                <!--3-->
-                <div style="width: 25%; margin-top: -6vw;">
-                    <!--Circle-->
-                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
-                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">3</p>
-                    </div>
-                    <!--Text-->
-                    <div style="border-color: #509CBA; border-style: none solid none none; border-width: 0.3vw;">
-                        <div style="margin: 1vw;">
-                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 600;">Start fixing</p>
-                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">We will arrive at your home driving a vehicle stocked with all the necessary equipment and tools quickly <br>
-                                <br></p>
-                        </div>
+            </div>
+            <!--3-->
+            <div class="process-div">
+                <!--Circle-->
+                <div class="process-circle">
+                    <p>3</p>
+                </div>
+                <!--Text-->
+                <div class="process-text-box">
+                    <div class="process-text-margin">
+                        <p class="process-text-box-1">Start fixing</p>
+                        <p class="process-text-box-2">We will arrive at your home driving a vehicle stocked with all the necessary equipment and tools quickly <br>
+                            <br></p>
                     </div>
                 </div>
-                <!--4-->
-                <div style="width: 25%; margin-top: -6vw;">
-                    <!--Circle-->
-                    <div style="background-color: #1F4B70; width: 10vw; height: 10vw; margin: auto; border-radius: 50%; border-color: white; border-style: solid; border-width: 1vw;">
-                        <p style="color: white; font-size: 7vw; font-weight: 400; margin: 0; padding: 0.8vw;">4</p>
-                    </div>
-                    <!--Text-->
-                    <div>
-                        <div style="margin: 1vw;">
-                            <p style="font-size: 2.3vw; margin: 1vw; font-weight: 700;">Complete project</p>
-                            <p style="font-size: 2vw; margin: 3vw 0 3vw 0; font-weight: 300;">Our experienced handymen always repair broken or leaky fixtures in order to avoid costly replacements</p>
-                        </div>
+            </div>
+            <!--4-->
+            <div class="process-div">
+                <!--Circle-->
+                <div class="process-circle">
+                    <p>4</p>
+                </div>
+                <!--Text-->
+                <div>
+                    <div class="process-text-margin">
+                        <p class="process-text-box-1">Complete project
+                        </p>
+                        <p class="process-text-box-2">Our experienced handymen always repair broken or leaky fixtures in order to avoid costly replacements</p>
                     </div>
                 </div>
             </div>
