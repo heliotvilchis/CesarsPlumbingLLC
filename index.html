@@ -1098,19 +1098,62 @@
                 text-decoration: none;
             }
             .top-logo {
-                width: 20vw;
-                height: 10vw;
+                width: 6.5vw;
+                height: 6.5vw;
                 background-image: url('/images/logo.png');
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
             .logo-title {
+                display: none;
                 font-size: 4.3vw;
                 font-weight: 900;
                 margin: 0vw 0;
                 color: #BD0006;
                 -webkit-text-stroke: 0.2vw black;
+            }
+            .logo-title-desktop-under {
+                text-align: center;
+                font-size: 2vw;
+                font-weight: 900;
+                text-shadow: .3vw .03vw 0.5vw white;
+            }
+            .call-btn-nav {
+                border-radius: 5vw;
+                background-color: #FFC70D;
+                width: 20vw;
+                height: 6.5vw;
+                display: flex;
+                color: #0d2131;
+            }
+            a {
+                text-decoration: none;
+            }
+            .call-btn-nav i {
+                font-size: 3.5vw;
+            }
+            .call-btn-nav div {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .call-btn-top-text {
+                width: 100%;
+                height: 40%;
+                font-size: 1.5vw;
+            }
+            .call-btn-bottom-text {
+                font-size: 2vw;
+                font-weight: 700;
+                margin-top: -1vw;
+            }
+            .logo-title-desktop {
+                font-size: 5vw;
+                font-weight: 900;
+                margin: 0vw 0;
+                color: #BD0006;
+                -webkit-text-stroke: 0.2vw black;
+                margin: -0.7vw;
             }
             /*Menu*/
             .menu {
@@ -1601,9 +1644,30 @@
             <!--Logo with letters-->
             <a href="/index.html" class="logo-w-letters">
                 <div class="top-logo"></div>
+
                 <h1 class="logo-title">
                     CESAR’S <br> PLUMBING LLC
                 </h1>
+            </a>
+            <!--Letters Desktop-->
+            <div>
+                <h1 class="logo-title-desktop">
+                    CESAR’S PLUMBING LLC
+                </h1>
+                <p class="logo-title-desktop-under">
+                    Licenced, bonded and insured &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; CCB#230832
+                </p>
+            </div>
+
+            <!--Call button-->
+            <a href="#">
+                <div class="call-btn-nav">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <div>
+                        <span class="call-btn-top-text">Call now</span>
+                        <span class="call-btn-bottom-text">503 338 8032</span>
+                    </div>
+                </div>
             </a>
             <!--Menu-->
             <a href="#" class="menu">
