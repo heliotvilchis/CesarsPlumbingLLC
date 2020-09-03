@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar's plumbing LLC | Plumbing, Repairing and Construction</title>
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+    <meta name="description" content="Cesar's plumbing LLC | Plumbing, Repairing and Construction">
+    <meta name="author" content="https://heliotvilchis.com">
+    <meta name="publisher" content="https://heliotvilchis.com">
+    <meta name="og:title" property="og:title" content="Cesar's plumbing LLC | Plumbing, Repairing and Construction">
+    <meta name="og:description" property="og:description" content="Cesar's plumbing LLC | Plumbing, Repairing and Construction">
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:url" property="og:url" content="https://cesarsplumbing.us">
+    <meta name="og:locale" property="og:locale" content="EN">
+    <meta name="og:site_name" property="og:site_name" content="Cesar's plumbing LLC">
+    <meta name="og:image" property="og:image" content="https://cesarsplumbing.us/images/logo.png">
+    <meta name="og:image:width" property="og:image:width" content="900">
+    <meta name="og:image:height" property="og:image:height" content="900">
+    <meta name="og:image:alt" property="og:image:alt" content="Cesar's plumbing LLC">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/64d5e357f6.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        /*Import-font*/
+        /*Nav*/
+        
+        .nav-bar {
+            height: 10vw;
+            width: 91vw;
+            margin: auto;
+            padding: 2vh 0 1vh 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .logo-w-letters {
+            display: flex;
+            text-decoration: none;
+        }
+        
+        .top-logo {
+            width: 6.5vw;
+            height: 6.5vw;
+            background-image: url('/images/logo.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .logo-title {
+            display: none;
+            font-size: 4.3vw;
+            font-weight: 900;
+            margin: 0vw 0;
+            color: #BD0006;
+            -webkit-text-stroke: 0.2vw black;
+        }
+        
+        .logo-title-desktop-under {
+            text-align: center;
+            color: #FFC70D;
+            font-size: 2vw;
+            font-weight: 900;
+            text-shadow: .3vw .03vw 0.5vw black;
+        }
+        
+        .call-btn-nav {
+            border-radius: 1vw;
+            background-color: #FFC70D;
+            width: 20vw;
+            height: 6.5vw;
+            display: flex;
+            color: #0d2131;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .call-btn-nav i {
+            padding-top: 1.3vw;
+            font-size: 4vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
+        
+        .call-btn-nav div {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 1.1vw;
+        }
+        
+        .call-btn-top-text {
+            width: 100%;
+            height: 40%;
+            font-size: 1.5vw;
+            color: #509CBA;
+        }
+        
+        .call-btn-bottom-text {
+            font-size: 2vw;
+            font-weight: 700;
+            margin-top: -1vw;
+        }
+        
+        .logo-title-desktop {
+            font-size: 5vw;
+            font-weight: 900;
+            margin: 0vw 0;
+            color: #BD0006;
+            -webkit-text-stroke: 0.2vw black;
+            margin: -0.7vw;
+        }
+        /*Menu*/
+        
+        .menu {
+            display: none;
+            background-color: #1F4B70;
+            width: 18vw;
+            height: 18vw;
+            border-radius: 15%;
+            box-shadow: 1vw 1vw 2vw black;
+        }
+        
+        .menu-line-1 {
+            background-color: white;
+            height: 2vw;
+            width: 80%;
+            margin: auto;
+            border-radius: 1vw;
+            margin-top: 3vw;
+        }
+        
+        .menu-line-2 {
+            background-color: white;
+            height: 2vw;
+            width: 70%;
+            margin: auto;
+            border-radius: 1vw;
+            margin-top: 3vw;
+        }
+        
+        .menu-line-3 {
+            background-color: white;
+            height: 2vw;
+            width: 80%;
+            margin: auto;
+            border-radius: 1vw;
+            margin-top: 3vw;
+        }
+        /*Under-text*/
+        
+        .under-text {
+            display: none;
+            width: 91vw;
+            margin: auto;
+            font-size: 5vw;
+            font-weight: 600;
+            text-align: center;
+            color: black;
+            background-size: auto;
+            background-color: #ffffff8e;
+            border-radius: 2vw;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: rgb(207, 207, 207);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+        
+        h2 {
+            width: 80vw;
+            margin: auto;
+            color: white;
+            font-size: 5vw;
+            margin-top: 5vw;
+            text-shadow: -0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.459);
+        }
+        
+        #map {
+            background-image: url("images/map.PNG");
+            width: 100%;
+            height: 50vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #map-cover {
+            background-color: hsla(207, 57%, 28%, 0.473);
+            width: 100%;
+            height: 50vw;
+        }
+        
+        #form-table {
+            width: 80vw;
+            height: 40vw;
+            background-color: white;
+            margin: auto;
+            box-shadow: -0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.459);
+            border-radius: 0.5vw;
+            display: flex;
+        }
+        
+        #form-side {
+            width: 70%;
+        }
+        
+        #contact-side {
+            background-color: #1F4B70;
+            width: 30%;
+            border-radius: 0 0.5vw 0.5vw 0;
+        }
+        
+        .contact-div {
+            width: 90%;
+            height: 5vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .mt-5vw {
+            margin-top: 5vw;
+        }
+        
+        .mt-2vw {
+            margin-top: 2vw;
+        }
+        
+        .yellow-icon-bg {
+            background-color: #FFC70D;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 0.5vw;
+            color: #1F4B70;
+            text-align: center;
+        }
+        
+        .yellow-icon-bg i {
+            font-size: 3.5vw;
+            margin-top: 0.5vw;
+        }
+        
+        .info-icon {
+            width: 70%;
+        }
+        
+        .info-icon p:nth-child(1) {
+            color: rgb(187, 187, 187);
+        }
+        
+        .info-icon p:nth-child(2) {
+            margin-top: 1vw;
+            color: white;
+            font-size: 1.3vw;
+            font-weight: 900;
+        }
+        
+        #facebook {
+            font-size: 5vw;
+            margin: auto;
+            width: 4.4vw;
+            padding-top: 2vw;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map">
+        <div id="map-cover">
+
+            <!--Nav-->
+            <div class="nav">
+                <div class="nav-bar">
+                    <!--Logo with letters-->
+                    <a href="/index.html" class="logo-w-letters">
+                        <div class="top-logo"></div>
+
+                        <h1 class="logo-title">
+                            CESAR’S <br> PLUMBING LLC
+                        </h1>
+                    </a>
+                    <!--Letters Desktop-->
+                    <div class="display-desktop">
+                        <h1 class="logo-title-desktop">
+                            CESAR’S PLUMBING LLC
+                        </h1>
+                        <p class="logo-title-desktop-under">
+                            Licenced, bonded and insured &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; CCB#230832
+                        </p>
+                    </div>
+
+                    <!--Call button-->
+                    <a href="#" class="display-desktop">
+                        <div class="call-btn-nav">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <div>
+                                <span class="call-btn-top-text">Call now</span>
+                                <span class="call-btn-bottom-text">503 338 8032</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Menu-->
+                    <a href="#" class="menu">
+                        <div class="menu-line-1">
+                        </div>
+                        <div class="menu-line-2">
+                        </div>
+                        <div class="menu-line-3">
+                        </div>
+                    </a>
+                </div>
+                <!--Under-text-->
+                <div class="under-text">
+                    <p>Licenced, bonded and insured</p>
+                    <p>CCB#230832</p>
+                </div>
+                <!--desktop Menu-->
+                <div class="display-desktop">
+                    <div style="width: 60%; margin: auto; display: flex;">
+                        <a href="#" style="background-color: white; width: 33.33%; height: 4vw; border-radius: 15px 0 0 15px; border-style: solid; border-color: #1F4B70; text-decoration: none;">
+                            <p style="color: #1F4B70; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 3.2vw; font-weight: 600;">
+                                CONTACT</p>
+                        </a>
+                        <a href="#" style="background-color: white; width: 33.33%; height: 4vw; border-style: solid; border-color: #1F4B70; text-decoration: none">
+                            <p style="color: #1F4B70; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 3vw; font-weight: 600;">
+                                SERVICES</p>
+                        </a>
+                        <a href="#" style="background-color: #BD0006; width: 33.33%; height: 4vw; border-radius: 0 15px 15px 0; border-style: solid; border-color: black black black #1F4B70; text-decoration: none">
+                            <p style="color: white; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 1.4vw; font-weight: 600;">
+                                EMERGENCY</p>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--Contact Form-->
+            <h2>Contact Us</h2>
+            <div id="form-table">
+                <div id="form-side">
+                    <h3>Get in touch with us</h3>
+                    <p>We are always happy to help you!</p>
+
+                </div>
+                <div id="contact-side">
+
+                    <a href="#">
+                        <div class="contact-div mt-5vw">
+                            <div class="yellow-icon-bg">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-icon">
+                                <p>Phone Number</p>
+                                <p><br>+1 (503) 338 8032</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="contact-div mt-2vw">
+                            <div class="yellow-icon-bg">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="info-icon">
+                                <p>Email</p>
+                                <p>cesarplumbing2020<br>@hotmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="contact-div mt-2vw">
+                            <div class="yellow-icon-bg">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-icon">
+                                <p>Office Address</p>
+                                <p>11 W. Kensington Ave
+                                    <br> Astoria - Oregon - 97103</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.facebook.com/Cesars-Plumbing-LLC-101201421659678">
+                        <div id="facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
