@@ -23,6 +23,9 @@
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/64d5e357f6.js" crossorigin="anonymous"></script>
 
+    <!--Captcha script-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /*Import-font*/
@@ -283,6 +286,214 @@
             padding-top: 2vw;
             color: white;
         }
+        /*Form*/
+        
+        #form-side {
+            width: 60%;
+            margin: 0 auto;
+        }
+        
+        #form-side p {
+            font-size: 1vw;
+            color: rgb(78, 78, 78);
+        }
+        
+        h3 {
+            font-size: 3vw;
+            margin-top: 5vw;
+            color: #1F4B70;
+        }
+        
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        #name {
+            margin: 3vw 0 2vw 0;
+            border-radius: 0.5vw;
+            font-size: 2vw;
+            text-align: center;
+            width: 100%;
+            border-color: #509CBA;
+            border-style: solid;
+            border-width: 0.3vw;
+            color: #1F4B70;
+        }
+        
+        #email {
+            border-radius: 0.5vw;
+            font-size: 2vw;
+            text-align: center;
+            width: 45%;
+            border-color: #509CBA;
+            border-style: solid;
+            border-width: 0.3vw;
+            color: #1F4B70;
+        }
+        
+        #phone {
+            border-radius: 0.5vw;
+            font-size: 2vw;
+            text-align: center;
+            width: 45%;
+            border-color: #509CBA;
+            border-style: solid;
+            border-width: 0.3vw;
+            color: #1F4B70;
+        }
+        
+        #message {
+            margin: 2vw 0;
+            border-radius: 0.5vw;
+            font-size: 2vw;
+            width: 100%;
+            border-color: #509CBA;
+            border-style: solid;
+            border-width: 0.3vw;
+            color: #1F4B70;
+        }
+        
+        #send-btn {
+            width: 55%;
+            border-radius: 0.5vw;
+            color: #1F4B70;
+            background-color: #FFC70D;
+            font-size: 2vw
+        }
+        /*Footer*/
+        
+        .footer {
+            background-image: url('/images/bottom-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: fit-content;
+            margin-top: 5vw;
+            position: absolute;
+        }
+        
+        .footer-text-main {
+            width: 100%;
+            height: fit-content;
+            padding-bottom: 2.5vw;
+            background-color: hsla(207, 57%, 28%, 0.80);
+        }
+        
+        .footer-container {
+            padding-top: 1vw;
+            text-align: center;
+            color: white;
+            font-size: 3vw;
+        }
+        
+        .footer-logo {
+            background-image: url('/images/logo.png');
+            width: 10vw;
+            height: 10vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 auto;
+        }
+        
+        .footer-call {
+            padding: 0;
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+        }
+        
+        .footer-call span {
+            padding-top: -28vw;
+            font-weight: 600;
+        }
+        
+        .footer-text-1 {
+            padding: 1vw 0;
+            font-weight: 300;
+        }
+        
+        .footer-text-2 {
+            padding: 1vw 0 0 0;
+            font-weight: 500;
+            margin-bottom: 3vw;
+        }
+        
+        .footer-quote {
+            color: #1F4B70;
+            text-decoration: none;
+            background-color: #FFC70D;
+            padding: 2vw 4vw;
+            font-size: 2vw;
+            font-weight: 300;
+            border-radius: 1vw;
+        }
+        /*CC*/
+        
+        .cc {
+            background-color: #1F4B70;
+        }
+        
+        .heliot {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5vw;
+            font-weight: 300;
+            text-align: left;
+        }
+        
+        .heliot p {
+            margin: 0;
+            padding: 1vw 0;
+        }
+        /*Discount*/
+        
+        #discount {
+            background-color: white;
+            width: 80vw;
+            height: 18vw;
+            margin: 4vw auto 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        #flag1 {
+            background-image: url('/images/flag1.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30vw;
+            height: 18vw;
+        }
+        
+        #flag-text {
+            width: 20vw;
+            margin-top: 3vw;
+        }
+        
+        #flag-text p:nth-child(1) {
+            color: #BD0006;
+            font-size: 3vw;
+            font-weight: 900;
+        }
+        
+        #flag-text p:nth-child(2) {
+            color: #1F4B70;
+            font-size: 2vw;
+            font-weight: 900;
+        }
+        
+        #flag2 {
+            background-image: url('/images/flag2.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30vw;
+            height: 18vw;
+        }
     </style>
 </head>
 
@@ -313,7 +524,7 @@
                     </div>
 
                     <!--Call button-->
-                    <a href="#" class="display-desktop">
+                    <a href="tel:+15033388032" class="display-desktop">
                         <div class="call-btn-nav">
                             <i class="fas fa-phone-alt" aria-hidden="true"></i>
                             <div>
@@ -340,15 +551,15 @@
                 <!--desktop Menu-->
                 <div class="display-desktop">
                     <div style="width: 60%; margin: auto; display: flex;">
-                        <a href="#" style="background-color: white; width: 33.33%; height: 4vw; border-radius: 15px 0 0 15px; border-style: solid; border-color: #1F4B70; text-decoration: none;">
+                        <a href="/quote.html" style="background-color: white; width: 33.33%; height: 4vw; border-radius: 15px 0 0 15px; border-style: solid; border-color: #1F4B70; text-decoration: none;">
                             <p style="color: #1F4B70; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 3.2vw; font-weight: 600;">
                                 CONTACT</p>
                         </a>
-                        <a href="#" style="background-color: white; width: 33.33%; height: 4vw; border-style: solid; border-color: #1F4B70; text-decoration: none">
+                        <a href="/index.html" style="background-color: white; width: 33.33%; height: 4vw; border-style: solid; border-color: #1F4B70; text-decoration: none">
                             <p style="color: #1F4B70; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 3vw; font-weight: 600;">
                                 SERVICES</p>
                         </a>
-                        <a href="#" style="background-color: #BD0006; width: 33.33%; height: 4vw; border-radius: 0 15px 15px 0; border-style: solid; border-color: black black black #1F4B70; text-decoration: none">
+                        <a href="tel:+15032989712" style="background-color: #BD0006; width: 33.33%; height: 4vw; border-radius: 0 15px 15px 0; border-style: solid; border-color: black black black #1F4B70; text-decoration: none">
                             <p style="color: white; font-size: 2.5vw; margin-top: 0.5vw; margin-left: 1.4vw; font-weight: 600;">
                                 EMERGENCY</p>
                         </a>
@@ -358,7 +569,6 @@
 
             </div>
 
-
             <!--Contact Form-->
             <h2>Contact Us</h2>
             <div id="form-table">
@@ -366,10 +576,19 @@
                     <h3>Get in touch with us</h3>
                     <p>We are always happy to help you!</p>
 
+                    <form action="/scripts/consultation.php" method="POST">
+                        <input id="name" name="name" placeholder='Your Name' type='text'>
+                        <input id="email" name="email" placeholder='Your Email' type='text'>
+                        <input id="phone" name="phone" placeholder='Your Phone' type='text'>
+                        <textarea id="message" name="message" placeholder='Your Message' type='text' rows="3"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LelLcQZAAAAAOYJ64b4OlrAkgxoD0zOjuVa-eTm"></div>
+                        <input id="send-btn" name="submit" type="submit" value="Send Message">
+                    </form>
+
                 </div>
                 <div id="contact-side">
 
-                    <a href="#">
+                    <a href="tel:+15033388032">
                         <div class="contact-div mt-5vw">
                             <div class="yellow-icon-bg">
                                 <i class="fas fa-phone-alt"></i>
@@ -381,7 +600,7 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="mailto:cesarplumbing2020@hotmail.com">
                         <div class="contact-div mt-2vw">
                             <div class="yellow-icon-bg">
                                 <i class="fas fa-comments"></i>
@@ -393,7 +612,7 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="https://goo.gl/maps/WBksuckzrPLB2yZQ9">
                         <div class="contact-div mt-2vw">
                             <div class="yellow-icon-bg">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -415,6 +634,59 @@
 
                 </div>
             </div>
+
+            <!--Footer-->
+            <!--Margin top must be the minus half of table-->
+            <div class="footer">
+                <!--Text-->
+                <div class="footer-text-main">
+                    <!--Padding top must be the same as margin top of main div-->
+                    <div class="footer-container">
+                        <!--Logo-->
+                        <div class="footer-logo">
+                        </div>
+                        <!--Text-->
+                        <a href="tel:+15033388032" class="footer-call">CALL US:
+                            <span>503 338 8032</span>
+                        </a>
+                        <p class="footer-text-1">Oregon, USA</p>
+                        <p class="footer-text-2">CCB #230832</p>
+
+
+                        <div id="discount">
+                            <div id="flag1"></div>
+                            <div id="flag-text">
+                                <p>10% <br> DISCOUUNT</p>
+                                <p>veterans and seniors</p>
+                            </div>
+                            <div id="flag2"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!--CC-->
+                <div class="cc">
+                    <a href="https://heliotvilchis.com/" class="heliot">
+                        <p>© Copyright 2020 Heliot Vilchis</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+            <!--Audio-->
+            <audio autoplay loop>
+                <source src="/images/audio.mp3" type="audio/ogg">
+                <source src="/images/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
     </div>
 
