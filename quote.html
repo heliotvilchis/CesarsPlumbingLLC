@@ -26,6 +26,9 @@
     <!--Captcha script-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <!--navbar-->
+    <script src="/scripts/navbar.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /*Import-font*/
@@ -499,6 +502,32 @@
 
 <body>
 
+    <!--NavBarOverlay-->
+    <div id="myNav" style="background-color: #b5eaff; width: 100%; height: 100vh; position: absolute; z-index:100; display: none; ">
+        <div style="width: 90%; margin: auto;">
+            <a style="float: right;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <p style="color: #BD0006; -webkit-text-stroke: 0.4vw black; font-size: 15vw; font-weight: 900;">X</p>
+            </a>
+            <br>
+            <a href="/quote.html">
+                <div style="width: 80%; margin-top: 15vw;">
+                    <p style="color: #0d2131;  font-size: 15vw; font-weight: 900;">CONTACT</p>
+                </div>
+            </a>
+            <a href="/index.html">
+                <div style="width: 80%; margin-top: 5vw;">
+                    <p style="color: #0d2131;  font-size: 15vw; font-weight: 900;">SERVICES</p>
+                </div>
+            </a>
+            <a href="tel:+15032989712">
+                <div style="width: 80%; margin-top: 5vw;">
+                    <p style="color: #BD0006; -webkit-text-stroke: 0.4vw black;  font-size: 15vw; font-weight: 900;">
+                        EMERGENCY</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <div id="map">
         <div id="map-cover">
 
@@ -534,7 +563,7 @@
                         </div>
                     </a>
                     <!--Menu-->
-                    <a href="#" class="menu">
+                    <a href="javascript:void(0);" onclick="openNav()" class="menu">
                         <div class="menu-line-1">
                         </div>
                         <div class="menu-line-2">
@@ -576,7 +605,7 @@
                     <h3>Get in touch with us</h3>
                     <p>We are always happy to help you!</p>
 
-                    <form action="/scripts/consultation.php" method="POST">
+                    <form action="/scripts/message.php" method="POST">
                         <input id="name" name="name" placeholder='Your Name' type='text'>
                         <input id="email" name="email" placeholder='Your Email' type='text'>
                         <input id="phone" name="phone" placeholder='Your Phone' type='text'>
