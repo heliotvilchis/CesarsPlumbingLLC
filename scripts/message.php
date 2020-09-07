@@ -2,7 +2,6 @@
 if (isset($_POST['submit'])) {
 
     // Fetching variables of the form which travels in URL
-    $subject = $_POST['subject'];
     $phone = $_POST['phone'];
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -10,9 +9,9 @@ if (isset($_POST['submit'])) {
 
     //Crates a message to pass
     $fullmessage = 'Name: ' . $_POST['name'] . '     ' . 'E-mail: ' . $_POST['email'] . '    ' . 'Phone: ' . $_POST['phone'] . '    ' . 'Message: ' . $_POST['message'];
-    if ($name != '' && $email != '' && $subject != '' && $message != '') {
+    if ($name != '' && $email != '' && $message != '' && $phone != '') {
         //  Send malil
-        mail("cesarplumbing2020@hotmail.com", $subject, $fullmessage);
+        mail("heliotvilchis@gmail.com", "Message from the website", $fullmessage);
         //  To redirect form on a particular page
         header("https://cesarsplumbing.us/index.html");
     } else {
