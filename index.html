@@ -1596,14 +1596,14 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
-                height: 50vw;
+                height: 70vw;
                 margin-top: -15vw;
                 z-index: -5;
                 position: absolute;
             }
             .footer-text-main {
                 width: 100%;
-                height: 50vw;
+                height: 70vw;
                 background-color: hsla(207, 57%, 28%, 0.80);
             }
             .footer-container {
@@ -1649,6 +1649,46 @@
                 font-size: 2vw;
                 font-weight: 300;
                 border-radius: 1vw;
+            }
+            /*Discount*/
+            #discount {
+                background-color: white;
+                width: 80vw;
+                height: 18vw;
+                margin: 4vw auto 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            #flag1 {
+                background-image: url('/images/flag1.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 30vw;
+                height: 18vw;
+            }
+            #flag-text {
+                width: 20vw;
+                margin-top: 3vw;
+            }
+            #flag-text p:nth-child(1) {
+                color: #BD0006;
+                font-size: 3vw;
+                font-weight: 900;
+            }
+            #flag-text p:nth-child(2) {
+                color: #1F4B70;
+                font-size: 2vw;
+                font-weight: 900;
+            }
+            #flag2 {
+                background-image: url('/images/flag2.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 30vw;
+                height: 18vw;
             }
             /*CC*/
             .cc {
@@ -2491,6 +2531,14 @@
                 <a class="footer-quote" href="/quote.html">
                     Request a Free Quote
                 </a>
+                <div id="discount">
+                    <div id="flag1"></div>
+                    <div id="flag-text">
+                        <p>5% <br> DISCOUNT</p>
+                        <p>veterans and seniors</p>
+                    </div>
+                    <div id="flag2"></div>
+                </div>
             </div>
         </div>
         <!--CC-->
