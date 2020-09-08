@@ -1,0 +1,7 @@
+User-agent: Googlebot Disallow: /scripts/
+User-agent: Googlebot Disallow: /styles/
+User-agent: Googlebot Disallow: /images/
+
+Sitemap: https://cesarsplumbing.us/sitemap.xml
+User-agent:*
+Disallow:
