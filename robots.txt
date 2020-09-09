@@ -1,7 +1,8 @@
-User-agent: Googlebot Disallow: /scripts/
-User-agent: Googlebot Disallow: /styles/
-User-agent: Googlebot Disallow: /images/
+User-Agent: *
+Disallow: 
+Allow: /cesarsplumbingastoria.com/images
+Allow: /cesarsplumbingastoria.com
+Allow: /cesarsplumbingastoria.com/
+Allow: /cesarsplumbingastoria.com/sitemap.xml
 
-Sitemap: https://cesarsplumbing.us/sitemap.xml
-User-agent:*
-Disallow:
+Sitemap: https:///cesarsplumbingastoria.com/sitemap.xml
