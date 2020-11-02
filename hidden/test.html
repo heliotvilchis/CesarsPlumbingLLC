@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .unchecked {
+            background-image: url('/images/svg/empty_star.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: white;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="ratingForm" id="form" method="post" action="/scripts/add-rating.php" onsubmit="return validateForm()" enctype="multipart/form-data">
+        <span>
+            <input type="radio" name="rating" id="rating-1" value="1" class="unchecked" onclick="ratingStars(1)">
+            <div class="unchecked">1</div>
+        </span>
+    </form>
+
+</body>
+
+</html>

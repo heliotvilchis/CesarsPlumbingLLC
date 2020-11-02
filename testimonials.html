@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <!--Import JQuerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Display data script-->
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("ratings").innerHTML = this.responseText;
+            }
+        }
+        $(document).ready(function() {
+            xmlhttp.open("GET", "/scripts/rating.php");
+            xmlhttp.send();
+        });
+    </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/rating.css">
+
+    <!--Rating Stars Script-->
+    <script src="/scripts/rating-stars.js"></script>
+
+</head>
+
+<body>
+
+    <div class="page-content">
+
+        <!--Testimonials-->
+        <div class="testimonials">
+            <h2 class="color-blue">TESTIMONIALS:</h2>
+            <div class="all-testimonials">
+
+                <div id="ratings"></div>
+
+            </div>
+        </div>
+
+        <!--Form-->
+        <div class="second-column">
+            <div class="form">
+                <form name="ratingForm" id="form" method="post" action="/scripts/add-rating.php" onsubmit="return validateForm()" enctype="multipart/form-data">
+                    <h3 class="color-blue">Thank you for sharing your experience and your kind words</h3>
+                    <span>
+                        <input type="radio" name="rating" id="rating-1" value="1" class="unchecked"
+                            onclick="ratingStars(1)">
+                        <label for="rating">1</label>
+                        <input type="radio" name="rating" id="rating-2" value="2" class="unchecked"
+                            onclick="ratingStars(2)">
+                        <label for="rating">2</label>
+                        <input type="radio" name="rating" id="rating-3" value="3" class="unchecked"
+                            onclick="ratingStars(3)">
+                        <label for="rating">3</label>
+                        <input type="radio" name="rating" id="rating-4" value="4" class="unchecked"
+                            onclick="ratingStars(4)">
+                        <label for="rating">4</label>
+                        <input type="radio" name="rating" id="rating-5" value="5" class="unchecked"
+                            onclick="ratingStars(5)">
+                        <label for="rating">5</label>
+                    </span>
+                    <br><br><br>
+                    <input type="text" name="cname" id="cname" placeholder="Your name">
+                    <br>
+                    <textarea name="details" id="details" cols="30" rows="10" placeholder='Share the details of your experience'></textarea>
+                    <br>
+                    <input type="submit" value="Send" id="send">
+                </form>
+
+                <script>
+                    function validateForm() {
+                        var x = document.forms["ratingForm"]["rating"].value;
+                        var y = document.forms["ratingForm"]["cname"].value;
+                        var z = document.forms["ratingForm"]["details"].value;
+                        if (x == "") {
+                            alert("Please give an star rating");
+                            return false;
+                        } else if (y == "") {
+                            alert("Name must be filled out");
+                        } else if (z == "") {
+                            alert("Please write some description");
+                        }
+                    }
+                </script>
+
+                <!--Division-->
+                <div class="div-line"></div>
+
+                <!--Contact-->
+                <div class="contact-info">
+                    <p class="link-info">
+                        <a href="tel:+15033388032">+1 (503) 338 8032</a>
+                    </p>
+                    <p class="link-info">
+                        <a href="mailto:cesarplumbing2020@hotmail.com">cesarplumbing2020@hotmail.com</a> </p>
+                    <p class="link-info">
+                        <a href="https://goo.gl/maps/WBksuckzrPLB2yZQ9">11 W. Kensington Ave <br>
+                            Astoria - Oregon -
+                            97103</a>
+                    </p>
+                    <p class="link-info">
+                        <a href="https://www.facebook.com/Cesars-Plumbing-LLC-101201421659678">
+                            <img src="/images/svg/facebook.svg" width="40px" alt="facebook">
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
