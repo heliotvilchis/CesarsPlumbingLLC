@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
 
+    <!--CSS-->
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/hidden/nav-bar.css">
+    <link rel="stylesheet" href="/rating.css">
+    <!--JS-->
+    <script src="/hidden/nav-bar.js"></script>
+    <script src="/scripts/rating-stars.js"></script>
+
     <!--Import JQuerry-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!--Display data script-->
+    <!--Display Nav-->
     <script>
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
+        var xmlhttp1 = new XMLHttpRequest();
+        xmlhttp1.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("nav").innerHTML = this.responseText;
+            }
+        }
+        $(document).ready(function() {
+            xmlhttp1.open("GET", "/hidden/nav-bar.php");
+            xmlhttp1.send();
+        });
+    </script>
+
+    <!--Display testimonials-->
+    <script>
+        var xmlhttp2 = new XMLHttpRequest();
+        xmlhttp2.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("ratings").innerHTML = this.responseText;
             }
         }
         $(document).ready(function() {
-            xmlhttp.open("GET", "/scripts/rating.php");
-            xmlhttp.send();
+            xmlhttp2.open("GET", "/scripts/rating.php");
+            xmlhttp2.send();
         });
     </script>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="/rating.css">
 
-    <!--Rating Stars Script-->
-    <script src="/scripts/rating-stars.js"></script>
+    <!--Display Footer-->
 
 </head>
 
 <body>
+    <div id="nav"></div>
 
     <div class="page-content">
 
@@ -49,28 +69,38 @@
         <div class="second-column">
             <div class="form">
                 <form name="ratingForm" id="form" method="post" action="/scripts/add-rating.php" onsubmit="return validateForm()" enctype="multipart/form-data">
-                    <h3 class="color-blue">Thank you for sharing your experience and your kind words</h3>
-                    <span>
-                        <input type="radio" name="rating" id="rating-1" value="1" class="unchecked"
-                            onclick="ratingStars(1)">
-                        <label for="rating">1</label>
-                        <input type="radio" name="rating" id="rating-2" value="2" class="unchecked"
-                            onclick="ratingStars(2)">
-                        <label for="rating">2</label>
-                        <input type="radio" name="rating" id="rating-3" value="3" class="unchecked"
-                            onclick="ratingStars(3)">
-                        <label for="rating">3</label>
-                        <input type="radio" name="rating" id="rating-4" value="4" class="unchecked"
-                            onclick="ratingStars(4)">
-                        <label for="rating">4</label>
-                        <input type="radio" name="rating" id="rating-5" value="5" class="unchecked"
-                            onclick="ratingStars(5)">
-                        <label for="rating">5</label>
+                    <h3 class="color-blue">Thank you for sharing your experience and your kind words <img src="/images/svg/heart.webp" alt="❤️" height="20px"> </h3>
+                    <span class="display-flex" style="margin-bottom: 5px;">
+                        <label class="star-container">
+                            <input type="radio" name="rating" id="rating-1" value="1" class="unchecked"
+                                onclick="ratingStars(1)">
+                            <span id="star-1" class="empty-star" onclick="ratingStars(1)"></span>
+                    </label>
+                    <label class="star-container">
+                            <input type="radio" name="rating" id="rating-2" value="2" class="unchecked"
+                                onclick="ratingStars(2)">
+                            <span id="star-2" class="empty-star" onclick="ratingStars(2)"></span>
+                        </label>
+                    <label class="star-container">
+                            <input type="radio" name="rating" id="rating-3" value="3" class="unchecked"
+                                onclick="ratingStars(3)">
+                            <span id="star-3" class="empty-star" onclick="ratingStars(3)"></span>
+                        </label>
+                    <label class="star-container">
+                            <input type="radio" name="rating" id="rating-4" value="4" class="unchecked"
+                                onclick="ratingStars(4)">
+                            <span id="star-4" class="empty-star" onclick="ratingStars(4)"></span>
+                        </label>
+                    <label class="star-container">
+                            <input type="radio" name="rating" id="rating-5" value="5" class="unchecked"
+                                onclick="ratingStars(5)">
+                            <span id="star-5" class="empty-star" onclick="ratingStars(5)"></span>
+                        </label>
                     </span>
-                    <br><br><br>
+                    <br>
                     <input type="text" name="cname" id="cname" placeholder="Your name">
                     <br>
-                    <textarea name="details" id="details" cols="30" rows="10" placeholder='Share the details of your experience'></textarea>
+                    <textarea name="details" id="details" cols="30" rows="5" placeholder='Share the details of your experience'></textarea>
                     <br>
                     <input type="submit" value="Send" id="send">
                 </form>
