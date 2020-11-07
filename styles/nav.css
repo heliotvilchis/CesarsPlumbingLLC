@@ -1,0 +1,366 @@
+/*Max 480px
+**Mobile***/
+
+@media (min-width: 0px) and (max-width: 480px) {
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+        color: #BD0006;
+        -webkit-text-stroke: 0.2vw black;
+        margin-top: 0.3vw;
+        font-weight: 900;
+    }
+    nav {
+        width: 100%;
+        height: 13vw;
+        background-color: white;
+        box-shadow: 0px 0.5px 5px black;
+        display: flex;
+    }
+    nav a {
+        display: flex;
+    }
+    .nav-btn {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 6px;
+        margin-right: 12px;
+        background-image: url('/images/svg/nav-btn.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 6vw;
+    }
+    .nav-headrer-desktop {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-logo {
+        width: 13vw;
+        height: 13vw;
+        background-image: url('/images/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11vw;
+        margin-left: -12px;
+    }
+    .nav-name {
+        margin-right: 12px;
+        height: 13vw;
+    }
+    .nav-under-text {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 900;
+        color: #FFC70D;
+        text-shadow: 0vw 0vw 1vw black;
+    }
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 5;
+    }
+    .menu-1 {
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .menu-main {
+        height: 74vh;
+    }
+    .menu-main p {
+        padding: 2vh;
+        color: #3b3b3b;
+    }
+    .menu-footer {
+        background-color: white;
+        padding: 0 4vw 3vh 4vw;
+        border-color: gray;
+        border-width: 0.5vw 0 0 0;
+        border-style: solid;
+        height: 22vh;
+    }
+    .phone-nbr {
+        padding: 2vh 2vw;
+        display: flex;
+    }
+    .phone-nbr a span {
+        color: #1F4B70;
+        padding: 0 0 0 2vw;
+    }
+    .call-now-btn {
+        background-color: #1F4B70;
+        padding: 2vh;
+        text-align: center;
+        color: white;
+    }
+    .emergency-btn {
+        background-color: #BD0006;
+        padding: 2vh;
+        margin-top: 2vh;
+        text-align: center;
+        color: white;
+    }
+    .menu-2 {
+        width: 30vw;
+        height: 100vh;
+        background-color: #00000070;
+    }
+    .nav-menu-desktop {
+        display: none;
+    }
+}
+
+
+/*Max 900px
+**Tablet***/
+
+@media (min-width: 480px) and (max-width: 900px) {
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+        color: #BD0006;
+        -webkit-text-stroke: 0.2vw black;
+        margin-top: 0.3vw;
+        font-weight: 900;
+    }
+    nav {
+        width: 100%;
+        height: 13vw;
+        background-color: white;
+        box-shadow: 0px 0.5px 5px black;
+        display: flex;
+    }
+    nav a {
+        display: flex;
+    }
+    .nav-btn {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 6px;
+        margin-right: 12px;
+        background-image: url('/images/svg/nav-btn.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 6vw;
+    }
+    .nav-headrer-desktop {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-logo {
+        width: 13vw;
+        height: 13vw;
+        background-image: url('/images/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11vw;
+        margin-left: -12px;
+    }
+    .nav-name {
+        margin-right: 12px;
+        height: 13vw;
+    }
+    .nav-under-text {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 900;
+        color: #FFC70D;
+        text-shadow: 0vw 0vw 1vw black;
+    }
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .menu-1 {
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .menu-main {
+        height: 74vh;
+    }
+    .menu-main p {
+        padding: 2vh;
+        color: #3b3b3b;
+    }
+    .menu-footer {
+        background-color: white;
+        padding: 0 4vw 3vh 4vw;
+        border-color: gray;
+        border-width: 0.5vw 0 0 0;
+        border-style: solid;
+        height: 22vh;
+    }
+    .phone-nbr {
+        padding: 2vh 2vw;
+        display: flex;
+    }
+    .phone-nbr a span {
+        color: #1F4B70;
+        padding: 0 0 0 2vw;
+    }
+    .call-now-btn {
+        background-color: #1F4B70;
+        padding: 2vh;
+        text-align: center;
+        color: white;
+    }
+    .emergency-btn {
+        background-color: #BD0006;
+        padding: 2vh;
+        margin-top: 2vh;
+        text-align: center;
+        color: white;
+    }
+    .menu-2 {
+        width: 30vw;
+        height: 100vh;
+        background-color: #00000070;
+    }
+    .nav-menu-desktop {
+        display: none;
+    }
+}
+
+
+/*Min 900px
+Screen*****/
+
+@media (min-width: 900px) {
+    h1 {
+        text-align: center;
+        font-size: 4.5vw;
+        color: #BD0006;
+        -webkit-text-stroke: 0.2vw black;
+        margin-top: 0.3vw;
+        font-weight: 900;
+        letter-spacing: 0.2vw;
+    }
+    nav {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 0.5px 5px black;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav a {
+        display: flex;
+    }
+    .nav-btn {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .nav-headrer-desktop {
+        display: flex;
+        justify-content: center;
+        width: 99vw;
+    }
+    .nav-logo {
+        width: 8vw;
+        height: 8vw;
+        background-image: url('/images/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        padding-right: 1vw;
+    }
+    .nav-name {
+        height: 8vw;
+    }
+    .nav-under-text {
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 900;
+        color: #FFC70D;
+        text-shadow: 0vw 0vw 0.3vw black;
+    }
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .menu-1 {
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .menu-main {
+        height: 74vh;
+    }
+    .menu-main p {
+        padding: 2vh;
+        color: #3b3b3b;
+    }
+    .menu-footer {
+        background-color: white;
+        padding: 0 4vw 3vh 4vw;
+        border-color: gray;
+        border-width: 0.5vw 0 0 0;
+        border-style: solid;
+        height: 22vh;
+    }
+    .phone-nbr {
+        padding: 2vh 2vw;
+        display: flex;
+    }
+    .phone-nbr a span {
+        color: #1F4B70;
+        padding: 0 0 0 0.5vw;
+    }
+    .call-now-btn {
+        background-color: #1F4B70;
+        width: 7vw;
+        padding: 1.5vh;
+        margin: 0.5vh 0;
+        text-align: center;
+        color: white;
+    }
+    .emergency-btn {
+        background-color: #BD0006;
+        width: 7vw;
+        padding: 1.5vh;
+        margin: 0.5vh 0;
+        margin-left: 1vw;
+        text-align: center;
+        color: white;
+    }
+    .menu-2 {
+        width: 30vw;
+        height: 100vh;
+        background-color: #00000070;
+    }
+    .nav-menu-desktop {
+        width: 100vw;
+        padding: 0vh 2vw;
+        border-color: gray;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        display: flex;
+    }
+    .desktop-nav-tabs {
+        display: flex;
+        padding: 2vh 3vw 2vh 0;
+        margin-right: auto;
+    }
+    .desktop-nav-tabs p {
+        margin: 0 1vw;
+        color: #000000bb;
+    }
+    .nav-menu-desktop-btns {
+        display: flex;
+    }
+}

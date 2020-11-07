@@ -7,12 +7,12 @@
     <title>Testimonials</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/hidden/nav-bar.css">
-    <link rel="stylesheet" href="/rating.css">
+    <link rel="stylesheet" href="/styles/root.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="/styles/rating.css">
     <!--JS-->
-    <script src="/hidden/nav-bar.js"></script>
-    <script src="/scripts/rating-stars.js"></script>
+    <script src="/new-sctipts/navbar.js"></script>
+    <script src="/new-sctipts/rating-stars.js"></script>
 
     <!--Import JQuerry-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -26,7 +26,7 @@
             }
         }
         $(document).ready(function() {
-            xmlhttp1.open("GET", "/hidden/nav-bar.php");
+            xmlhttp1.open("GET", "/new-sctipts/nav-bar.php");
             xmlhttp1.send();
         });
     </script>
@@ -40,7 +40,7 @@
             }
         }
         $(document).ready(function() {
-            xmlhttp2.open("GET", "/scripts/rating.php");
+            xmlhttp2.open("GET", "/new-sctipts/rating.php");
             xmlhttp2.send();
         });
     </script>
@@ -68,7 +68,7 @@
         <!--Form-->
         <div class="second-column">
             <div class="form">
-                <form name="ratingForm" id="form" method="post" action="/scripts/add-rating.php" onsubmit="return validateForm()" enctype="multipart/form-data">
+                <form name="ratingForm" id="form" method="post" action="/new-sctipts/add-rating.php" onsubmit="return validateForm()" enctype="multipart/form-data">
                     <h3 class="color-blue">Thank you for sharing your experience and your kind words <img src="/images/svg/heart.webp" alt="❤️" height="20px"> </h3>
                     <span class="display-flex" style="margin-bottom: 5px;">
                         <label class="star-container">
@@ -115,8 +115,10 @@
                             return false;
                         } else if (y == "") {
                             alert("Name must be filled out");
+                            return false;
                         } else if (z == "") {
                             alert("Please write some description");
+                            return false;
                         }
                     }
                 </script>
@@ -141,13 +143,10 @@
                             <img src="/images/svg/facebook.svg" width="40px" alt="facebook">
                         </a>
                     </p>
-
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 
 </html>

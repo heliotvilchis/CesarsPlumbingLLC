@@ -1,0 +1,304 @@
+/**Display Stars**/
+
+.unchecked:after {
+    background-image: url('/images/svg/empty_star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.checked:after {
+    background-image: url('/images/svg/full_star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+/**Star code**/
+
+.star-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.star-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.empty-star {
+    background-image: url('/images/svg/empty_star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.full-star {
+    background-image: url('/images/svg/full_star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+
+/*Max 900px
+Phone and Tablet*****/
+
+@media (min-width: 0px) and (max-width: 900px) {
+    /**All display**/
+    .page-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    h2 {
+        margin: 0;
+        font-size: 10vw;
+        background-image: url('/images/svg/quotegradient.webp');
+        background-repeat: no-repeat;
+        padding-top: 15vh;
+        padding-left: 1vw;
+        background-position: left;
+        letter-spacing: 0.3vw;
+        text-shadow: -2px 2px 2px #bbbbbbb6;
+        font-weight: 900;
+    }
+    h3 {
+        font-size: 20px;
+        text-shadow: -2px 2px 2px #bbbbbbb6;
+        font-weight: 900;
+        margin-bottom: 1vh;
+    }
+    h4,
+    p {
+        margin: 0 0 5px 0;
+    }
+    /*Reuse*/
+    .color-blue {
+        color: #1F4B70;
+    }
+    .float-right {
+        float: right;
+    }
+    .float-left {
+        float: left;
+    }
+    /*Selective*/
+    .testimonials {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        order: 2;
+    }
+    .second-column {
+        width: 100%;
+        background-image: linear-gradient(45deg, red, blue);
+    }
+    .form {
+        width: 92%;
+        margin: 4vw auto;
+        padding: 1vh;
+        background-color: white;
+        box-shadow: 0px 0px 4px black;
+    }
+    .testimonial {
+        width: 60%;
+        margin-top: 30px;
+    }
+    #cname {
+        border-radius: 8px;
+        height: 3vh;
+        width: 98%;
+        margin: -30px 0 20px 0;
+        border-style: solid;
+        border-color: #1F4B70;
+        font-weight: 900;
+    }
+    #details {
+        border-radius: 8px;
+        width: 98%;
+        border-style: solid;
+        border-color: #1F4B70;
+        font-weight: 900;
+    }
+    #send {
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+        background-size: 20px;
+        text-shadow: -3px 3px 3px #bbbbbbb6;
+        font-weight: 900;
+    }
+    .div-line {
+        background-color: #bbbbbb;
+        width: 100%;
+        height: 0.3vh;
+        margin-top: 25px;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .link-info {
+        font-size: 5vw;
+        margin: 2vh 0 0 0;
+    }
+    .link-info a {
+        text-decoration: none;
+        color: #494949;
+        font-weight: 600;
+    }
+}
+
+
+/*Min 900px
+Screen*****/
+
+@media (min-width: 900px) {
+    /**All display**/
+    .page-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 96%;
+        margin: auto;
+    }
+    h2 {
+        margin: 0;
+        font-size: 5vw;
+        background-image: url('/images/svg/quotegradient.webp');
+        background-repeat: no-repeat;
+        padding-top: 15vh;
+        padding-left: 1vw;
+        background-position: left;
+        letter-spacing: 0.3vw;
+        text-shadow: -2px 2px 2px #bbbbbbb6;
+        font-weight: 900;
+    }
+    h3 {
+        margin: 0 0 20px 0;
+        font-size: 23px;
+        text-shadow: -2px 2px 2px #bbbbbbb6;
+        font-weight: 900;
+    }
+    h4,
+    p {
+        margin: 0 0 5px 0;
+    }
+    /*Reuse*/
+    .color-blue {
+        color: #1F4B70;
+    }
+    .float-right {
+        float: right;
+    }
+    .float-left {
+        float: left;
+    }
+    /*Selective*/
+    .testimonials {
+        width: 70%;
+        padding: 20px 20px 0 20px;
+    }
+    .second-column {
+        width: 23vw;
+        background-image: linear-gradient(45deg, red, blue);
+        min-height: 100vh;
+    }
+    .form {
+        position: fixed;
+        width: 19vw;
+        padding: 1vw;
+        margin: 8vh 1vw;
+        background-color: white;
+        box-shadow: 0px 0px 4px black;
+    }
+    .testimonial {
+        width: 60%;
+        margin-top: 30px;
+    }
+    #cname {
+        border-radius: 8px;
+        height: 20px;
+        width: 98%;
+        margin: -30px 0 20px 0;
+        border-style: solid;
+        border-color: #1F4B70;
+        font-weight: 900;
+    }
+    #details {
+        border-radius: 8px;
+        width: 98%;
+        border-style: solid;
+        border-color: #1F4B70;
+        font-weight: 900;
+    }
+    #send {
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+        background-size: 20px;
+        text-shadow: -3px 3px 3px #bbbbbbb6;
+        font-weight: 900;
+    }
+    .div-line {
+        background-color: #bbbbbb;
+        width: 100%;
+        height: 3px;
+        margin-top: 25px;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .link-info {
+        font-size: large;
+        margin: 20px 0 0 0;
+    }
+    .link-info a {
+        text-decoration: none;
+        color: #494949;
+        font-weight: 600;
+    }
+}
