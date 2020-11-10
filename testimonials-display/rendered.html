@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/root.css">
+
+    <!--Import JQuerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Display Nav-->
+    <script>
+        var xmlhttp1 = new XMLHttpRequest();
+        xmlhttp1.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("reviews").innerHTML = this.responseText;
+            }
+        }
+        $(document).ready(function() {
+            xmlhttp1.open("GET", "/testimonials-display/reviews.php");
+            xmlhttp1.send();
+        });
+    </script>
+
+</head>
+
+<body>
+    test
+    <div id="reviews"></div>
+
+</body>
+
+</html>
