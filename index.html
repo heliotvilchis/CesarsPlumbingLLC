@@ -119,6 +119,22 @@
     <!--navbar-->
     <script src="/scripts/navbar.js"></script>
 
+    <!--Import JQuerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        var xmlhttp1 = new XMLHttpRequest();
+        xmlhttp1.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("reviews").innerHTML = this.responseText;
+            }
+        }
+        $(document).ready(function() {
+            xmlhttp1.open("GET", "/new-sctipts/rating.php");
+            xmlhttp1.send();
+        });
+    </script>
+
     <!--Page style-->
     <style>
         /*Import text*/
@@ -2646,11 +2662,14 @@
         }
     </script>
 
+    <div class="process" style=" padding: 50px 0;">
+        <div id="reviews"></div>
+    </div>
+
     <!--Process-->
     <div class="process">
         <!--title-->
-        <p class="process-text-1">OUR PROCESS
-        </p>
+        <p class="process-text-1">OUR PROCESS </p>
         <!--table-->
         <div class="process-table">
             <!--1-->
