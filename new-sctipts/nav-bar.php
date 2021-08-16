@@ -27,7 +27,7 @@
                 <p>Contact</p>
             </a>
             <a href='/testimonials.html'>
-                <p>Testimonials</p>
+                <p>Reviews</p>
             </a>
         </div>
         <div class='nav-menu-desktop-btns'>
@@ -59,7 +59,7 @@
                 <p>Contact</p>
             </a>
             <a href='/testimonials.html'>
-                <p>Testimonials</p>
+                <p>Reviews</p>
             </a>
         </div>
         <div class='menu-footer'>
